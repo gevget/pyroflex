@@ -1,0 +1,831 @@
+[
+  {
+    order: 1,
+    recordId: 'rec1883097971',
+    kind: '1272',
+    text: 'Продукты Системы Сервисы Документы Партнерам Контакты 8 (800) 101-8-112 office@pyroflex.ru Связаться RU',
+    media: [
+      {
+        file: '/assets/original-runtime/logo_pyroflex.svg',
+        original: undefined,
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/logo_pyroflex.svg',
+        original: undefined,
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: '',
+        href: 'https://pyroflex.tilda.ws/#rec1877922361'
+      },
+      {
+        label: '',
+        href: 'https://pyroflex.tilda.ws/#rec1877922361'
+      },
+      {
+        label: 'Продукты',
+        href: 'https://pyroflex.tilda.ws/'
+      },
+      {
+        label: 'Пирофлекс Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877752351'
+      },
+      {
+        label: 'Пирофлекс База',
+        href: 'https://pyroflex.tilda.ws/#rec1877775741'
+      },
+      {
+        label: 'Пирофлекс Финиш',
+        href: 'https://pyroflex.tilda.ws/#rec1877775741'
+      },
+      {
+        label: 'Пирофлекс Акрил',
+        href: 'https://pyroflex.tilda.ws/#rec2100038941'
+      },
+      {
+        label: 'Пирофлекс Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877793561'
+      },
+      {
+        label: 'Пирофлекс Терма Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877766851'
+      },
+      {
+        label: 'Пирофлекс Терма Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877766851'
+      },
+      {
+        label: 'Пирофлекс Кабель',
+        href: 'https://pyroflex.tilda.ws/#rec5021178601'
+      },
+      {
+        label: 'Системы',
+        href: 'https://pyroflex.tilda.ws/'
+      },
+      {
+        label: 'Пирофлекс Система-Т Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877829701'
+      },
+      {
+        label: 'Пирофлекс Система-Т Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877829701'
+      },
+      {
+        label: 'Сервисы',
+        href: 'https://pyroflex.tilda.ws/#rec1898842101'
+      },
+      {
+        label: 'Документы',
+        href: 'https://pyroflex.tilda.ws/#rec1877863371'
+      },
+      {
+        label: 'Партнерам',
+        href: 'https://pyroflex.tilda.ws/#rec1898858371'
+      },
+      {
+        label: 'Контакты',
+        href: 'https://pyroflex.tilda.ws/#rec1898896341'
+      },
+      {
+        label: 'off',
+        href: 'mailto:office@pyroflex.ru'
+      },
+      {
+        label: 'ice@pyroflex.ru',
+        href: 'mailto:office@pyroflex.ru'
+      },
+      {
+        label: 'Связаться',
+        href: 'https://pyroflex.tilda.ws/#rec1898896341'
+      },
+      {
+        label: 'RU Russian',
+        href: 'https://pyroflex.tilda.ws/ru'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 2,
+    recordId: 'rec1877922361',
+    kind: '1461',
+    text: 'ПИРОФЛЕКС — передовые технологии средств и систем огнезащиты Отечественное производство огнезащитных материалов, разработка комплексных систем, встроенный сервис реализации — от проектирования до подтверждения соответствия выполненных работ на объекте Продукция',
+    media: [],
+    links: [
+      {
+        label: 'Продукция',
+        href: 'https://pyroflex.tilda.ws/#rec1877752351'
+      }
+    ],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-008-6cc55eb9dc49.png',
+      'http://127.0.0.1:4173/assets/original-media/media-012-077a83f94f95.png'
+    ]
+  },
+  {
+    order: 3,
+    recordId: 'rec2086542461',
+    kind: '204',
+    text: 'ПИРОФЛЕКС — передовые технологии средств и систем огнезащиты Отечественное производство огнезащитных материалов, разработка комплексных систем, встроенный сервис реализации — от проектирования до подтверждения соответствия выполненных работ на объекте Продукция #rec2086542461 .t-btnflex.t-btnflex_type_button{color:#000000;background-color:#ffffff;--border-width:0px;border-style:none !important;border-radius:10px;box-shadow:none !important;font-family:var(--t-text-font,Arial);font-weight:400;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;} #rec2086542461 .t181__title{font-family:var(--t-text-font,Arial);font-weight:400;}#rec2086542461 .t181__descr{font-weight:500;color:#cac2bd;}',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-013-3023b33a1a86.png'
+    ]
+  },
+  {
+    order: 4,
+    recordId: 'rec1877638491',
+    kind: '772',
+    text: 'Продукт — система — сервис Огнезащита работает только тогда, когда материалы и сервис образуют единую инженерную систему Продукт Огнезащитные материалы собственного производства. Разрабатываются как элементы инженерных систем. Система Готовые инженерные решения для обеспечения требуемой огнезащиты и гарантированной эффективности. Сервис Подбор, проектирование и выполнение работ на объекте.',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-015-a433cc4d09e7.png',
+      'http://127.0.0.1:4173/assets/original-media/media-018-4d9fccc68b77.png',
+      'http://127.0.0.1:4173/assets/original-media/media-020-f5eabcc50b4d.png'
+    ]
+  },
+  {
+    order: 5,
+    recordId: 'rec1877959041',
+    kind: '30',
+    text: 'Эффективны в любой среде',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 6,
+    recordId: 'rec1877891891',
+    kind: '603',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-023-f8aa08fcc972.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-025-4f7fd6986f62.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-027-9ea1eaa8b0b1.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-029-3035cc9fa5dc.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-031-999f2b5642e8.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-033-5cf8764ea8e1.webp'
+    ]
+  },
+  {
+    order: 7,
+    recordId: 'rec1898671591',
+    kind: '503',
+    text: 'Инженерные параметры огнезащитных систем R15–R150 Обеспечение всех нормативных пределов огнестойкости металлических конструкций, зданий и сооружений I и II степени огнестойкости от −70 °C до +80 °C Применимо к системам ПИРОФЛЕКС в зависимости от состава Целлюлозный и углеводородный пожары / криогенный пролив Подбор системы выполняется с учётом сценария пожара и требований проекта Внутри / снаружи Применяется для внутренних и наружных металлоконструкций в зависимости от выбранной системы и условий эксплуатации Типы оснований Применяется для огнезащиты стальных металлоконструкций, включая балки, колонны, фермы и связи Коррозийная стойкость до С5 Сейсмостойкость 9 баллов Срок службы до 40 лет',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2250.png.webp',
+        original: 'assets/original-media/media-034-4d9d8ce4d7f7.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2251.png.webp',
+        original: 'assets/original-media/media-035-c1c1c816a9c4.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2252.png.webp',
+        original: 'assets/original-media/media-036-d77fbc83105d.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2253.png.webp',
+        original: 'assets/original-media/media-037-a71e6e6a26c6.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2254.png.webp',
+        original: 'assets/original-media/media-038-a51f36ad47ff.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2255.png.webp',
+        original: 'assets/original-media/media-039-db9c76fd476b.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2256.png.webp',
+        original: 'assets/original-media/media-040-942fe61dd01b.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/989fccec-f5d8-47cd-9.png.webp',
+        original: 'assets/original-media/media-041-e18ae8562025.png',
+        alt: ''
+      }
+    ],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 8,
+    recordId: 'rec5051799701',
+    kind: '106',
+    text: 'Это больше, чем огнезащитное покрытие ПИРОФЛЕКС — инженерная платформа, где продукт, система и сервис работают в тандеме. Мы включаемся в проект на этапе подбора решения и сопровождаем его до реализации на объекте. Нам важен не факт поставки материала, а результат — корректно спроектированная и подтверждённая система огнезащиты',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 9,
+    recordId: 'rec5051650901',
+    kind: '160',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-043-360baa1afea8.webp'
+    ]
+  },
+  {
+    order: 10,
+    recordId: 'rec1898781121',
+    kind: '1751',
+    text: 'О НАС Команда Опыт Работы с огнезащитными системами для промышленных и инфраструктурных объектов 10+ лет Подход Научный подход к разработке средств и систем огнезащиты 100% расчёт и испытания Принципы Формат единого центра компетенций для выбора и реализации оптимальных решений по огнезащите Единый центр Объекты Промышленных, коммерческих и инфраструктурных объектов 50+ Строгий контроль качества Собственная лаборатория',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 11,
+    recordId: 'rec1937169181',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 12,
+    recordId: 'rec1877752351',
+    kind: '2021',
+    text: 'PX-U Ультра Огнезащитное покрытие для металлоконструкций на полиуретановой основе Двухкомпонентный тонкослойный огнезащитный состав для повышения огнезащитной эффективности стальных строительных конструкций до R120, как внутри зданий, так и в условиях открытой атмосферы. Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/1Frame_2230.png.webp',
+        original: 'assets/original-media/media-044-30b63a1f4fba.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2368.png.webp',
+        original: 'assets/original-media/media-045-f31a38824789.png',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 13,
+    recordId: 'rec1937191851',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 14,
+    recordId: 'rec1877775741',
+    kind: '1981',
+    text: 'PX-B PX-F База и Финиш Грунт эпоксидный для антикоррозионной защиты металлических конструкций и оборудования Грунтовка обеспечивает долговечную защиту и высокие эстетические свойства благодаря ингибиторам коррозии, эффективно предотвращающим образование ржавчины Сертификаты Эмаль финишная акрил-уретановая Двухкомпонентный материал на основе акрил-уретановой смолы Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2369.jpg.webp',
+        original: 'assets/original-media/media-046-f97318892880.jpg',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2370.png',
+        original: 'assets/original-media/media-047-58a49f024030.png',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%91%D0%B0%D0%B7%D0%B0'
+      },
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A4%D0%B8%D0%BD%D0%B8%D1%88'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 15,
+    recordId: 'rec2100038941',
+    kind: '1981',
+    text: 'PX-A Акрил Огнезащитная краска на органической основе для металлических конструкций Быстросохнущая огнезащитная краска на основе органического растворителя для применения как внутри здания, так и в открытой атмосфере. Не требует применения финишного покрытия Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2371.png',
+        original: 'assets/original-media/media-048-de4b19277573.png',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%90%D0%BA%D1%80%D0%B8%D0%BB'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 16,
+    recordId: 'rec1883501111',
+    kind: '209',
+    text: 'Бесплатно рассчитаем ваш проект Связаться',
+    media: [],
+    links: [
+      {
+        label: 'Связаться',
+        href: 'https://pyroflex.tilda.ws/#rec1898896341'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 17,
+    recordId: 'rec1937193391',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 18,
+    recordId: 'rec1877793561',
+    kind: '2021',
+    text: 'PX-E Эпокси Двухкомпонентный эпоксидный огнезащитный состав для металлических конструкций Высокоэффективное покрытие для повышения огнезащитной эффективности стальных конструкций до R120 в условиях открытой атмосферы. Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/1Frame_2227.png',
+        original: 'assets/original-media/media-049-0dec1443f52d.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2367.png',
+        original: 'assets/original-media/media-050-1c0329143644.png',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%AD%D0%BF%D0%BE%D0%BA%D1%81%D0%B8'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 19,
+    recordId: 'rec1937227601',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 20,
+    recordId: 'rec1877766851',
+    kind: '912',
+    text: 'Будь уверен при любых условиях Термозащитное покрытие Терма Ультра Термозащитный слой в составе систем ПИРОФЛЕКС Ультра обеспечивает формирование огнезащитного слоя при воздействии пожара и работу системы в заданном классе огнестойкости Сертификаты Терма Эпокси Термозащитный слой в составе систем ПИРОФЛЕКС Эпокси предназначен для работы в тяжёлых условиях эксплуатации и обеспечения требуемого класса огнестойкости конструкции Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2373.png',
+        original: 'assets/original-media/media-051-0a8a46d2c16a.png',
+        alt: 'The Team teachable'
+      },
+      {
+        file: '/assets/original-runtime/Frame_2372.png',
+        original: 'assets/original-media/media-052-d17c7941ee3d.png',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Терма Ультра',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%A2%20%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0'
+      },
+      {
+        label: 'Терма Эпокси',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A2%D0%B5%D1%80%D0%BC%D0%B0%20%D0%AD%D0%BF%D0%BE%D0%BA%D1%81%D0%B8'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 21,
+    recordId: 'rec5021462901',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 22,
+    recordId: 'rec1877829701',
+    kind: '1332',
+    text: 'PX-SYS-T ПИРОФЛЕКС Система-Т Конструктивная система пассивной огнезащиты металлоконструкций с обязательным термозащитным слоем. Система-Т — это не набор материалов, а инженерное решение, в котором термослой формирует и стабилизирует огнезащитный контур конструкции при пожаре Система-Т Ультра Система конструктивной огнезащиты металлоконструкций на полиуретановой основе. Представляет собой комбинированное двухслойное покрытие, в состав которого входят теплоизоляционный материал и огнезащитный терморасширяющийся материал. Сертификаты Система-Т Эпокси Конструктивная огнезащита металлоконструкций на эпоксидной основе, состоящая из теплоизоляционного и огнезащитного состава Сертификаты',
+    media: [],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%A2%20%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0'
+      },
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%A2%20%D0%AD%D0%BF%D0%BE%D0%BA%D1%81%D0%B8'
+      }
+    ],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-056-9b85458a47c5.png',
+      'http://127.0.0.1:4173/assets/original-media/media-057-931fcbc51e5d.png'
+    ]
+  },
+  {
+    order: 23,
+    recordId: 'rec1937172311',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 24,
+    recordId: 'rec5021178601',
+    kind: '1981',
+    text: 'PX-C Кабель Огнезащитный состав на водной основе для электрических кабелей Огнезащитный терморасширяющийся состав на водной основе, представляющий собой смесь огнезащитных компонентов, наполнителей, реологических добавок в связующем. Сертификаты',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2402.jpg',
+        original: 'assets/original-media/media-055-348bf42a1f44.jpg',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Сертификаты',
+        href: 'https://disk.yandex.ru/d/QjbvRVq6sBiBYg/%D0%9E%D0%B3%D0%BD%D0%B5%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%9F%D0%B8%D1%80%D0%BE%D1%84%D0%BB%D0%B5%D0%BA%D1%81-%D0%9A%D0%B0%D0%B1%D0%B5%D0%BB%D1%8C'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 25,
+    recordId: 'rec1928670561',
+    kind: '61',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 26,
+    recordId: 'rec1937230721',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 27,
+    recordId: 'rec1877812011',
+    kind: '694',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-058-a00dcaf88307.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-059-186ad350aae7.webp',
+      'http://127.0.0.1:4173/assets/original-media/media-071-443521922f80.webp'
+    ]
+  },
+  {
+    order: 28,
+    recordId: 'rec1937176261',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 29,
+    recordId: 'rec1898842101',
+    kind: '1971',
+    text: 'Сервисы Проектирование, поставка и реализация на объектах. Разработка проектов огнезащиты металлических конструкций Поставка материалов ПИРОФЛЕКС Подтверждение соответствия качества выполненной огнезащиты с применением аккредитованных испытательных лабораторий Технический надзор на объекте Огнезащита под ключ',
+    media: [
+      {
+        file: '/assets/original-runtime/Frame_2262.png.webp',
+        original: 'assets/original-media/media-064-e4e58fa62563.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2272.png',
+        original: 'assets/original-media/media-066-6825889e229e.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2279.png',
+        original: 'assets/original-media/media-067-a6b1121f0af2.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2269.png',
+        original: 'assets/original-media/media-070-8d55a6229149.png',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/Frame_2278.png',
+        original: 'assets/original-media/media-073-51c61c94fb76.png',
+        alt: ''
+      }
+    ],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-063-697011c68083.svg',
+      'http://127.0.0.1:4173/assets/original-media/media-065-77f087060da3.svg',
+      'http://127.0.0.1:4173/assets/original-media/media-068-705f6a6cec51.svg',
+      'http://127.0.0.1:4173/assets/original-media/media-069-d9cbf0a2c8f2.svg',
+      'http://127.0.0.1:4173/assets/original-media/media-072-f6b16ecd32d2.svg'
+    ]
+  },
+  {
+    order: 30,
+    recordId: 'rec1937178701',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 31,
+    recordId: 'rec1877863371',
+    kind: '1148',
+    text: 'Документы и сертификаты Подтверждение соответствия материалов и систем действующим нормативам и требованиям',
+    media: [
+      {
+        file: '/assets/original-runtime/cert1.webp',
+        original: 'assets/original-media/media-075-412a10412d3a.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-1.webp',
+        original: 'assets/original-media/media-074-ec7a467ae33d.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-2.webp',
+        original: 'assets/original-media/media-076-caad0d927fcc.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-3.webp',
+        original: 'assets/original-media/media-077-c5db5337cda5.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-4.webp',
+        original: 'assets/original-media/media-078-46b5647a253c.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-5.webp',
+        original: 'assets/original-media/media-079-18f555c9fe5d.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-6.webp',
+        original: 'assets/original-media/media-080-54ff556d4919.webp',
+        alt: ''
+      },
+      {
+        file: '/assets/original-runtime/cert1-7.webp',
+        original: 'assets/original-media/media-083-b000787e0fa8.webp',
+        alt: ''
+      }
+    ],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 32,
+    recordId: 'rec5021882801',
+    kind: '209',
+    text: 'Открыть полный каталог Открыть',
+    media: [],
+    links: [
+      {
+        label: 'Открыть',
+        href: 'https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FkWewl3SqPys8ICY%2BIU5wQ%2F1MKC1lZ%2FkGCgwMSXv7lyT6Ph1zTRP9Rsy8OXVspT7Cq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%20%D0%9F%D0%98%D0%A0%D0%9E%D0%A4%D0%9B%D0%95%D0%9A%D0%A1.pdf&name=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%20%D0%9F%D0%98%D0%A0%D0%9E%D0%A4%D0%9B%D0%95%D0%9A%D0%A1.pdf'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 33,
+    recordId: 'rec1937186801',
+    kind: '215',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 34,
+    recordId: 'rec1898858371',
+    kind: '1531',
+    text: 'Партнерам Мы выстраиваем партнёрские отношения с компаниями и командами, участвующими в реализации огнезащитных решений на объектах. Мы открыты к сотрудничеству не как заказчик–исполнитель, а как участники одной инженерной цепочки. Кому подойдет Проектные и инжиниринговые компании Организации, участвующие в проектировании зданий, сооружений и инженерных систем 01 EPC-подрядчики и генеральные подрядчики Компании, реализующие объекты «под ключ» и отвечающие за интеграцию решений на всех этапах строительства 02 Строительно-монтажные организации Компании, выполняющие нанесение огнезащитных покрытий и монтаж систем на объектах 03 Производители металлоконструкций Предприятия, изготавливающие металлические конструкции для промышленного и гражданского строительства 04 Связаться',
+    media: [
+      {
+        file: '/assets/original-runtime/e3692be7-e75d-4758-a.jpg',
+        original: 'assets/original-media/media-081-c552efcfdc2c.jpg',
+        alt: ''
+      }
+    ],
+    links: [
+      {
+        label: 'Связаться',
+        href: 'https://pyroflex.tilda.ws/#rec1898896341'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 35,
+    recordId: 'rec1877721351',
+    kind: '939',
+    text: 'Области применения Системы и материалы ПИРОФЛЕКС применяются на объектах с повышенными требованиями к огнестойкости и условиям эксплуатации Энергетика Машзалы энергоблоков, кабельные эстакады и несущие металлоконструкции на объектах атомной и тепловой энергетики. Кабельные эстакады Защита кабельных эстакад и металлоконструкций на открытых территориях АЭС, ГРЭС и промышленных площадках. Нефтехимия Металлоконструкции технологических установок в условиях высоких температур и агрессивных сред. Химическая промышленность Огнезащита металлоконструкций при воздействии химических продуктов и коррозионных факторов. Морской и прибрежный климат Применение в условиях морского климата с постоянным воздействием влаги и солей. Экстремальные температуры Эксплуатация в условиях тропического климата и при экстремально низких температурах.',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-085-d3fca7bf28ec.jpg',
+      'http://127.0.0.1:4173/assets/original-media/media-088-99b97fa4e027.jpg',
+      'http://127.0.0.1:4173/assets/original-media/media-089-e348f56e84e2.jpg',
+      'http://127.0.0.1:4173/assets/original-media/media-090-b07693ec000f.jpg',
+      'http://127.0.0.1:4173/assets/original-media/media-092-a0bf03933970.jpg',
+      'http://127.0.0.1:4173/assets/original-media/media-094-deb04c38a582.jpg'
+    ]
+  },
+  {
+    order: 36,
+    recordId: 'rec1878069971',
+    kind: '1351',
+    text: 'ВАЖНО Испытания и сертификация Все материалы и системы ПИРОФЛЕКС проходят обязательные испытания и подтверждение соответствия действующим нормативам Комплект Документов на каждую систему',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-096-82a6e7ea934b.jpg'
+    ]
+  },
+  {
+    order: 37,
+    recordId: 'rec1898896341',
+    kind: '1721',
+    text: 'Мы готовы оперативно подключиться к решению задач по огнезащите на вашем объекте Отправьте запрос — мы ответим и предоставим необходимую информацию +31 Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности Отправить',
+    media: [],
+    links: [],
+    backgrounds: [
+      'http://127.0.0.1:4173/assets/original-media/media-099-3eeb3303a26a.png',
+      'http://127.0.0.1:4173/assets/original-media/media-006-b1f649b90a1b.png'
+    ]
+  },
+  {
+    order: 38,
+    recordId: 'rec1883350301',
+    kind: '420',
+    text: '8 (800) 101-8-112 office@pyroflex.ru © 2026 ООО "" ПРОДУКТЫ Пирофлекс Ультра Пирофлекс Терма Ультра Пирофлекс Эпокс Пирофлекс Терма Эпокс Пирофлекс База Пирофлекс Финиш Пирофлекс Акрил Пирофлекс Кабель СИСТЕМЫ Пирофлекс Система-Т Ультра Пирофлекс Система-Т Эпокс НАВИГАЦИЯ Сервисы Документы Партнерам Контакты',
+    media: [
+      {
+        file: '/assets/original-runtime/logo_pyroflex.svg',
+        original: undefined,
+        alt: 'Продукты'
+      }
+    ],
+    links: [
+      {
+        label: '',
+        href: 'https://pyroflex.tilda.ws/#'
+      },
+      {
+        label: '8 (800) 101-8-112',
+        href: 'mailto:office@pyroflex.ru'
+      },
+      {
+        label: 'office@pyroflex.ru',
+        href: 'mailto:office@pyroflex.ru'
+      },
+      {
+        label: 'Пирофлекс Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877752351'
+      },
+      {
+        label: 'Пирофлекс Терма Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877766851'
+      },
+      {
+        label: 'Пирофлекс Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877793561'
+      },
+      {
+        label: 'Пирофлекс Терма Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877766851'
+      },
+      {
+        label: 'Пирофлекс База',
+        href: 'https://pyroflex.tilda.ws/#rec1877775741'
+      },
+      {
+        label: 'Пирофлекс Финиш',
+        href: 'https://pyroflex.tilda.ws/#rec1877775741'
+      },
+      {
+        label: 'Пирофлекс Акрил',
+        href: 'https://pyroflex.tilda.ws/#rec2100038941'
+      },
+      {
+        label: 'Пирофлекс Кабель',
+        href: 'https://pyroflex.tilda.ws/#rec5021178601'
+      },
+      {
+        label: 'Пирофлекс Система-Т Ультра',
+        href: 'https://pyroflex.tilda.ws/#rec1877829701'
+      },
+      {
+        label: 'Пирофлекс Система-Т Эпокс',
+        href: 'https://pyroflex.tilda.ws/#rec1877829701'
+      },
+      {
+        label: 'Сервисы',
+        href: 'https://pyroflex.tilda.ws/#services'
+      },
+      {
+        label: 'Документы',
+        href: 'https://pyroflex.tilda.ws/#docs'
+      },
+      {
+        label: 'Партнерам',
+        href: 'https://pyroflex.tilda.ws/#partners'
+      },
+      {
+        label: 'Контакты',
+        href: 'https://pyroflex.tilda.ws/#rec1898896341'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 39,
+    recordId: 'rec1878041811',
+    kind: '61',
+    text: 'ВИЗУАЛЬНЫЕ МАТЕРИАЛЫ НА САЙТЕ ИСПОЛЬЗУЮТСЯ В ИНФОРМАЦИОННЫХ ЦЕЛЯХ. ВНЕШНИЙ ВИД ПРОДУКЦИИ И УПАКОВКИ МОЖЕТ ОТЛИЧАТЬСЯ ОТ ПРЕДСТАВЛЕННОГО НА ИЗОБРАЖЕНИЯХ, ПРИ ЭТОМ ВСЕ ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ, СОСТАВЫ И ПОКАЗАТЕЛИ ОГНЕЗАЩИТНОЙ ЭФФЕКТИВНОСТИ СООТВЕТСТВУЮТ НОРМАТИВНОЙ И ТЕХНИЧЕСКОЙ ДОКУМЕНТАЦИИ.',
+    media: [],
+    links: [],
+    backgrounds: []
+  },
+  {
+    order: 40,
+    recordId: 'rec1883750001',
+    kind: '61',
+    text: 'Сделано с Толком',
+    media: [],
+    links: [
+      {
+        label: 'Сделано с Толком',
+        href: 'https://tolk-usite.com/'
+      }
+    ],
+    backgrounds: []
+  },
+  {
+    order: 41,
+    recordId: 'rec2085549781',
+    kind: '270',
+    text: '',
+    media: [],
+    links: [],
+    backgrounds: []
+  }
+]

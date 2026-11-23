@@ -1,0 +1,12 @@
+dist/
+.playwright-mcp/
+tmp/
+legacy-assets/
+assets/original-media/
+assets/original-runtime/
+Этикетки/
+ПИРОФЛЕКС — инженерные решения для огнезащитных систем.html
+ПИРОФЛЕКС — инженерные решения для огнезащитных систем_files/
+reference.html
+reference-original-1440.png
+ST-SG-AC10-1r22e_Vol2_WEB_0.pdf
