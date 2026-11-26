@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BRAND_ROOT = 'branding/ОГНЕЗАЩИТНЫЕ СИСТЕМЫ ПИРОФЛЕКС — копия 10.11.26';
+const CATALOG_DOWNLOAD = 'assets/site/downloads/pyroflex-catalog.pdf';
 const PRODUCT_ORDER = ['ultra', 'base', 'finish', 'acrylic', 'epoxy', 'therma-ultra', 'therma-epoxy', 'cable'];
 const SYSTEM_ORDER = ['system-t-ultra', 'system-t-epoxy'];
 
@@ -27,12 +28,12 @@ const pages = [
       ['consumption.svg', '1,47 кг/м²', 'на 1 мм сухого слоя']
     ],
     benefitHeading: 'Быстрое нанесение и совместимость',
-    benefitLead: 'Органическая основа, удобная технология и подтверждённые каталожные характеристики.',
+    benefitLead: '',
     benefitTitles: ['Органическая основа', 'Быстрое высыхание', 'Стандартное оборудование', 'Совместимость материалов', 'Сейсмостойкость'],
     benefitIcons: ['material-description.svg', 'drying.svg', 'equipment.svg', 'verified.svg', 'seismic-resistance.svg'],
     lifespan: 'Срок службы — до 20 лет. Сейсмостойкость — до 9 баллов.',
     descriptionHeading: 'Матовая гладкая поверхность',
-    techLead: 'Параметры нанесения и высыхания приведены по каталожной карточке; толщину задаёт проектный расчёт.',
+    techLead: '',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС-АКРИЛ`, excludeDocs: [/таблица расходов/i],
     expenseHeading: 'Расход ПИРОФЛЕКС-АКРИЛ',
     expenseTables: [{ file: 'docs/product-content/tables/acryl.md', label: 'Расход по пределу огнестойкости', source: `${BRAND_ROOT}/ПИРОФЛЕКС-АКРИЛ/ПИРОФЛЕКС АКРИЛ_таблица расходов.pdf`, mode: 'wide' }],
@@ -67,7 +68,7 @@ const pages = [
     techLead: 'Смешивайте компоненты и подготавливайте основание в соответствии с техническими условиями.',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС-БАЗА`, excludeDocs: [],
     expenseHeading: 'Опорный расход ПИРОФЛЕКС-БАЗА', expenseTables: [],
-    expenseNote: 'Сводный документ указывает 300 г/м² при толщине сухого слоя 100 мкм. Отдельная полная таблица расхода в переданном комплекте не обнаружена.',
+    expenseNote: 'Теоретический расход — 300 г/м² при сухой толщине слоя 100 мкм.',
     related: ['finish'],
     storage: { range: '−35…+35 °C', period: '18 месяцев', note: 'Хранить вдали от огня, прямого солнечного света и влаги.' },
     metaDescription: 'ПИРОФЛЕКС-БАЗА — эпоксидный антикоррозионный грунт для металлоконструкций. Характеристики, подготовка основания, расход и локальные документы.'
@@ -77,7 +78,7 @@ const pages = [
     title: 'ПИРОФЛЕКС-ФИНИШ', nav: 'Пирофлекс Финиш', code: 'PX-F', tu: '20.30.12-104-73815750-2024',
     accent: '#AC55FF', accentInk: '#7425A8', iconFolder: 'finish',
     category: 'Двухкомпонентная акрил-уретановая эмаль для финишной защиты и отделки',
-    heroLead: 'Защитно-декоративный слой для металла, бетона и железобетона. Цвет выбирается по каталогу RAL.',
+    heroLead: 'Защитно-декоративный слой для металла, бетона и железобетона. Цвет — по RAL.',
     heroImage: 'branding/финиш 3.png', heroAlt: 'Ведро эмали ПИРОФЛЕКС-ФИНИШ, код PX-F',
     areaImage: 'branding/back/финиш.png', areaAlt: 'ПИРОФЛЕКС-ФИНИШ на промышленном объекте',
     areaHeading: 'Для металла, бетона и инфраструктурных объектов',
@@ -94,12 +95,12 @@ const pages = [
     benefitLead: 'ФИНИШ защищает подготовленную поверхность и задаёт цвет и блеск по проекту.',
     benefitTitles: ['Адгезия и долговечность', 'Коррозионная стойкость C5', 'Выбор цвета и блеска', 'Срок службы до 25 лет', 'Сейсмостойкость'],
     benefitIcons: ['verified.svg', 'corrosion-shield.svg', 'material-description.svg', 'service-life.svg', 'seismic-resistance.svg'],
-    lifespan: 'Срок службы — не менее 25 лет по каталогу.',
+    lifespan: '',
     descriptionHeading: 'Акрил-уретановая эмаль',
     techLead: 'Подготовьте компоненты A и B, соблюдайте жизнеспособность смеси и требования к подготовке поверхности.',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС-ФИНИШ`, excludeDocs: [],
     expenseHeading: 'Опорный расход ПИРОФЛЕКС-ФИНИШ', expenseTables: [],
-    expenseNote: 'Сводный документ указывает 135 г/м² при толщине сухого слоя 50 мкм. Полная отдельная таблица расхода ФИНИША в переданном комплекте не обнаружена.',
+    expenseNote: 'Теоретический расход — 135 г/м² при сухой толщине слоя 50 мкм.',
     related: ['base'],
     storage: { range: '−35…+35 °C', period: '18 месяцев', note: 'Хранить вдали от огня, прямого солнечного света и влаги.' },
     metaDescription: 'ПИРОФЛЕКС-ФИНИШ — двухкомпонентная акрил-уретановая эмаль с коррозионной стойкостью C5 и цветом по RAL. Расход, нанесение и документы.'
@@ -161,12 +162,12 @@ const pages = [
     benefitLead: 'Водная основа, готовность к применению и несколько способов нанесения.',
     benefitTitles: ['Водная основа', 'Влагостойкость', 'Готов к применению', 'Разные способы нанесения', 'Для помещений и улицы'],
     benefitIcons: ['material-description.svg', 'weather-resistance.svg', 'verified.svg', 'equipment.svg', 'application-outdoor.svg'],
-    lifespan: 'Эксплуатационная температура по каталогу — −60…+60 °C.',
+    lifespan: '',
     descriptionHeading: 'Матовый серый состав для кабельных оболочек',
     techLead: 'Наносите по сухому чистому основанию. Проектом задаются требуемая толщина и число слоёв.',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС-КАБЕЛЬ`, excludeDocs: [],
     expenseHeading: 'Расход ПИРОФЛЕКС-КАБЕЛЬ', expenseTables: [],
-    expenseNote: 'Ориентир каталога — 1,36 кг/м² при толщине сухого слоя 800 мкм. Отдельная полная таблица расхода в переданном комплекте не обнаружена.',
+    expenseNote: 'Теоретический расход — 1,36 кг/м² при сухой толщине слоя 800 мкм.',
     related: [],
     storage: { range: 'выше 0 °C', period: '12 месяцев', note: 'Замораживание материала запрещено.' },
     metaDescription: 'ПИРОФЛЕКС-КАБЕЛЬ — водный огнезащитный состав для кабелей внутри и снаружи зданий. Расход, температурный диапазон, нанесение и официальные документы.'
@@ -180,29 +181,20 @@ const pages = [
     heroImage: 'branding/терма ультра 2.png', heroAlt: 'Ведро теплоизоляционного материала ПИРОФЛЕКС-ТЕРМА УЛЬТРА, код PX-T-U',
     areaImage: 'branding/back/т ультра.png', areaAlt: 'Терма Ультра и Ультра в составе системы огнезащиты',
     areaHeading: 'Компонент СИСТЕМА-Т УЛЬТРА',
-    applications: [
-      ['application-industrial.svg', 'Стальные конструкции'], ['gear.svg', 'Конструктивная огнезащита'],
-      ['coating.svg', 'Теплоизоляционный слой'], ['verified.svg', 'Работа совместно с ПИРОФЛЕКС-УЛЬТРА']
-    ],
-    facts: [
-      ['technical-characteristics.svg', 'ТУ 20.30.22-102', 'идентификатор материала'],
-      ['material-description.svg', 'Полиуретановая', 'основа по карточке системы'],
-      ['coating.svg', 'Теплоизоляционный', 'слой СИСТЕМА-Т УЛЬТРА']
-    ],
+    applications: [], facts: [],
     benefitHeading: 'Роль теплоизоляционного слоя',
-    benefitLead: 'Каталог показывает ТЕРМА УЛЬТРА как компонент системы, а не как самостоятельное покрытие с отдельным набором показателей.',
-    benefitsOverride: ['Теплоизоляционный слой системы на полиуретановой основе.', 'Применяется совместно с ПИРОФЛЕКС-УЛЬТРА в конструктивной огнезащите.', 'Показатели R90–R150, C5 и срок службы относятся к СИСТЕМА-Т УЛЬТРА.'],
+    benefitLead: '',
+    benefitsOverride: [],
     benefitTitles: ['Формирует системный слой', 'Работает в составе СИСТЕМА-Т УЛЬТРА', 'Показатели системы остаются показателями системы'],
     benefitIcons: ['coating.svg', 'verified.svg', 'certificate-check.svg'],
-    lifespan: 'R90–R150, C5, сейсмостойкость и срок службы относятся к СИСТЕМА-Т УЛЬТРА.',
+    lifespan: '',
     descriptionHeading: 'Теплоизоляционный материал на полиуретановой основе',
-    techLead: 'Отдельные параметры нанесения ТЕРМА УЛЬТРА в каталоге не выделены. Для системного слоя используйте технологический регламент СИСТЕМА-Т УЛЬТРА.',
+    techLead: '',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС СИСТЕМА-Т УЛЬТРА`,
     onlyDocs: [/ТУ 20\.30\.22-102/i, /ТР № 02-24/i],
-    expenseHeading: 'Расход слоя ТЕРМА УЛЬТРА в составе системы', expenseTables: [],
-    expenseNote: 'Отдельный расход компонента не публикуется как самостоятельное значение. Подберите толщину и расход по официальной таблице СИСТЕМА-Т УЛЬТРА.',
-    related: ['system-t-ultra', 'ultra', 'base', 'finish'], relatedHeading: 'Система применения и сопутствующие материалы',
-    storage: { range: 'отдельно не указан', period: 'уточнить по ТУ и регламенту', note: 'Не переносите системный срок хранения на отдельный компонент без проверки маркировки и документации.' },
+    expenseHeading: '', expenseTables: [], expenseNote: '',
+    related: ['system-t-ultra'], relatedHeading: 'СИСТЕМА-Т УЛЬТРА',
+    storage: { range: 'отдельно не указан', period: '', note: '' },
     metaDescription: 'ПИРОФЛЕКС-ТЕРМА УЛЬТРА — теплоизоляционный компонент СИСТЕМА-Т УЛЬТРА. Назначение слоя, документы и связь с огнезащитным составом.'
   },
   {
@@ -214,28 +206,19 @@ const pages = [
     heroImage: 'branding/терма эпокси 2.png', heroAlt: 'Ведро теплоизоляционного материала ПИРОФЛЕКС-ТЕРМА ЭПОКСИ, код PX-T-E',
     areaImage: 'branding/back/т эпокси.png', areaAlt: 'Терма Эпокси и Эпокси в составе системы огнезащиты',
     areaHeading: 'Компонент СИСТЕМА-Т ЭПОКСИ',
-    applications: [
-      ['application-industrial.svg', 'Стальные конструкции'], ['gear.svg', 'Конструктивная огнезащита'],
-      ['coating.svg', 'Теплоизоляционный слой'], ['verified.svg', 'Работа совместно с ПИРОФЛЕКС-ЭПОКСИ']
-    ],
-    facts: [
-      ['technical-characteristics.svg', 'ТУ 20.30.22-108', 'идентификатор материала'],
-      ['material-description.svg', 'Эпоксидная', 'основа по карточке системы'],
-      ['coating.svg', 'Теплоизоляционный', 'слой СИСТЕМА-Т ЭПОКСИ']
-    ],
+    applications: [], facts: [],
     benefitHeading: 'Роль теплоизоляционного слоя',
-    benefitLead: 'ТЕРМА ЭПОКСИ — часть конструктивной системы. Показатели системы нельзя трактовать как самостоятельные показатели компонента.',
-    benefitsOverride: ['Теплоизоляционный слой эпоксидной конструктивной системы.', 'Применяется совместно с ПИРОФЛЕКС-ЭПОКСИ.', 'Показатели R90–R150, C5 и срок службы относятся к СИСТЕМА-Т ЭПОКСИ.'],
+    benefitLead: '',
+    benefitsOverride: [],
     benefitTitles: ['Формирует системный слой', 'Работает в составе СИСТЕМА-Т ЭПОКСИ', 'Показатели системы остаются показателями системы'],
     benefitIcons: ['coating.svg', 'verified.svg', 'certificate-check.svg'],
-    lifespan: 'R90–R150, C5, сейсмостойкость и срок службы относятся к СИСТЕМА-Т ЭПОКСИ.',
+    lifespan: '',
     descriptionHeading: 'Теплоизоляционный слой эпоксидной системы',
-    techLead: 'Отдельные параметры нанесения ТЕРМА ЭПОКСИ в каталоге не выделены. Для системного слоя используйте официальные документы СИСТЕМА-Т ЭПОКСИ.',
+    techLead: '',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС СИСТЕМА-Т ЭПОКСИ`, onlyDocs: [/ТУ_ПИРОФЛЕКС-ТЕРМА ЭПОКСИ/i],
-    expenseHeading: 'Расход слоя ТЕРМА ЭПОКСИ в составе системы', expenseTables: [],
-    expenseNote: 'Отдельный расход компонента не публикуется как самостоятельное значение. Подберите толщину и расход по официальной таблице СИСТЕМА-Т ЭПОКСИ.',
-    related: ['system-t-epoxy', 'epoxy', 'base', 'finish'], relatedHeading: 'Система применения и сопутствующие материалы',
-    storage: { range: 'отдельно не указан', period: 'уточнить по ТУ и регламенту', note: 'Условия хранения проверяйте по ТУ и маркировке конкретной партии.' },
+    expenseHeading: '', expenseTables: [], expenseNote: '',
+    related: ['system-t-epoxy'], relatedHeading: 'СИСТЕМА-Т ЭПОКСИ',
+    storage: { range: 'отдельно не указан', period: '', note: '' },
     metaDescription: 'ПИРОФЛЕКС-ТЕРМА ЭПОКСИ — теплоизоляционный компонент системы СИСТЕМА-Т ЭПОКСИ. Назначение слоя, документы и связь с огнезащитным составом.'
   },
   {
@@ -254,20 +237,20 @@ const pages = [
     facts: [
       ['fire-performance.svg', 'R90–R150', 'предел огнестойкости системы'], ['corrosion-shield.svg', 'C5', 'коррозионная стойкость'],
       ['seismic-resistance.svg', 'до 9', 'баллов при высоте до 70 м'], ['service-life.svg', '≥40 лет', 'срок службы системы'],
-      ['temperature-thermometer.svg', '−70…+80 °C', 'наружная эксплуатация по каталогу']
+      ['temperature-thermometer.svg', '−70…+80 °C', 'температура эксплуатации']
     ],
     benefitHeading: 'Конструктивная защита с теплоизоляционным слоем',
     benefitLead: 'Показатели относятся к СИСТЕМА-Т УЛЬТРА как к системе и зависят от проектного решения.',
     benefitTitles: ['Огнестойкость до R150', 'Внутреннее и наружное применение', 'Коррозионная категория C5', 'Для групп огнезащитной эффективности 1–3', 'Сейсмостойкость до 9 баллов', 'Срок службы не менее 40 лет'],
     benefitIcons: ['fire-performance.svg', 'application-outdoor.svg', 'corrosion-shield.svg', 'verified.svg', 'seismic-resistance.svg', 'service-life.svg'],
-    lifespan: 'Каталог указывает применение без финишного покрытия в заданных наружных условиях; решение проверяют по проекту.',
+    lifespan: '',
     descriptionHeading: 'Последовательность слоёв системы',
     techLead: 'Технологические параметры компонентов и системные требования сверяйте с отдельными регламентами перед началом работ.',
     docsFolder: `${BRAND_ROOT}/ПИРОФЛЕКС СИСТЕМА-Т УЛЬТРА`, excludeDocs: [/таблица расходов/i],
     expenseHeading: 'Расход каждого слоя по пределу и ПТМ',
     expenseTables: [{ file: 'docs/product-content/tables/system-t-ultra.md', label: 'СИСТЕМА-Т УЛЬТРА · R90–R150', source: `${BRAND_ROOT}/ПИРОФЛЕКС СИСТЕМА-Т УЛЬТРА/ПИРОФЛЕКС СИСТЕМА-Т УЛЬТРА_таблица расходов.pdf`, mode: 'wide' }],
     related: ['base', 'therma-ultra', 'ultra', 'finish'],
-    storage: { range: '+5…+40 °C', period: '12 месяцев по карточке системы', note: 'Проверяйте срок и условия отдельно для каждого компонента по маркировке и документации.' },
+    storage: { range: '+5…+40 °C', period: '12 месяцев', note: '' },
     systemComponents: ['БАЗА', 'ТЕРМА УЛЬТРА', 'УЛЬТРА', 'ФИНИШ'],
     metaDescription: 'СИСТЕМА-Т УЛЬТРА — конструктивная огнезащита металлоконструкций R90–R150. Состав слоёв, таблица расхода, технология и документы.'
   },
@@ -287,10 +270,10 @@ const pages = [
     facts: [
       ['fire-performance.svg', 'R90–R150', 'предел огнестойкости системы'], ['corrosion-shield.svg', 'C5', 'коррозионная стойкость'],
       ['seismic-resistance.svg', 'до 9', 'баллов сейсмостойкости'], ['service-life.svg', 'до 40 лет', 'срок службы системы'],
-      ['temperature-thermometer.svg', '−15…+40 °C', 'нанесение ЭПОКСИ по каталогу']
+      ['temperature-thermometer.svg', '−15…+40 °C', 'температура нанесения']
     ],
     benefitHeading: 'Система слоёв для огнезащиты конструкций',
-    benefitLead: 'Характеристики относятся к системе; для открытой атмосферы каталог предусматривает финишный слой.',
+    benefitLead: '',
     benefitTitles: ['Огнестойкость до R150', 'Коррозионная категория C5', 'Сейсмостойкость до 9 баллов', 'Срок службы до 40 лет', 'Финиш для открытой атмосферы'],
     benefitIcons: ['fire-performance.svg', 'corrosion-shield.svg', 'seismic-resistance.svg', 'service-life.svg', 'application-outdoor.svg'],
     lifespan: 'Сухой остаток и режим нанесения в таблице относятся к огнезащитному составу ЭПОКСИ, а не к ТЕРМА ЭПОКСИ.',
@@ -300,7 +283,7 @@ const pages = [
     expenseHeading: 'Расход каждого слоя по пределу и ПТМ',
     expenseTables: [{ file: 'docs/product-content/tables/system-t-epoxy.md', label: 'СИСТЕМА-Т ЭПОКСИ · R90–R150', source: `${BRAND_ROOT}/ПИРОФЛЕКС СИСТЕМА-Т ЭПОКСИ/ПИРОФЛЕКС СИСТЕМА-Т ЭПОКСИ_таблица расходов.pdf`, mode: 'wide' }],
     related: ['base', 'therma-epoxy', 'epoxy', 'finish'],
-    storage: { range: 'условия компонентов различаются', period: 'проверять по ТУ и маркировке', note: 'Срок −40…+40 °C и 12 месяцев в каталоге относится к ЭПОКСИ, а не ко всем слоям системы.' },
+    storage: { range: '−40…+40 °C', period: '12 месяцев', note: '' },
     systemComponents: ['БАЗА', 'ТЕРМА ЭПОКСИ', 'ЭПОКСИ', 'ФИНИШ'],
     metaDescription: 'СИСТЕМА-Т ЭПОКСИ — конструктивная огнезащита металлоконструкций R90–R150. Состав слоёв, официальная таблица расхода, технология и документы.'
   }
@@ -414,9 +397,10 @@ function paragraphHtml(values, className = '') {
 function renderDefinitionTable(rows, className = 'pf-spec-table') {
   if (rows.length < 2) return '';
   const bodyRows = rows.slice(1).filter((row) => row.some(Boolean));
+  const valueHeading = /значение.*каталог/i.test(rows[0][1] ?? '') ? 'Значение' : rows[0][1];
   return `<table class="${className}">
   <caption class="pf-visually-hidden">Технические характеристики</caption>
-  <thead><tr><th scope="col">${escapeHtml(rows[0][0])}</th><th scope="col">${escapeHtml(rows[0][1])}</th></tr></thead>
+  <thead><tr><th scope="col">${escapeHtml(rows[0][0])}</th><th scope="col">${escapeHtml(valueHeading)}</th></tr></thead>
   <tbody>${bodyRows.map((row) => `<tr><th scope="row">${escapeHtml(row[0] ?? '')}</th><td>${escapeHtml(row[1] ?? '')}</td></tr>`).join('')}</tbody>
   </table>`;
 }
@@ -437,7 +421,7 @@ function renderExpenseTable(rows, caption, mode, sourcePath) {
   const wideClass = mode === 'wide' || head.length > 7 ? ' pf-expense-grid--ugv' : '';
   return `<details class="pf-expense-table" open>
     <summary><span>${escapeHtml(caption)}</span><span>${body.length} строк · ${head.length} параметров</span></summary>
-    <div class="pf-expense-table__source"><a href="${relativeHref(sourcePath)}" target="_blank" rel="noopener">Открыть исходную таблицу PDF</a></div>
+    <div class="pf-expense-table__source"><a href="${relativeHref(sourcePath)}" target="_blank" rel="noopener">Скачать таблицу расходов</a></div>
     <div class="pf-expense-scroll" role="region" aria-label="${escapeHtml(caption)}" tabindex="0">
       <table class="pf-expense-grid${wideClass}">
         <caption class="pf-visually-hidden">${escapeHtml(caption)}</caption>
@@ -488,39 +472,38 @@ function renderDocuments(page, files, certLines) {
     <span class="pf-detail-document__copy"><small>${escapeHtml(file.kind)}</small><strong>${escapeHtml(file.title)}</strong></span>
     <span class="pf-detail-document__open">Открыть PDF</span>
   </a>`).join('\n');
-  const noCertificate = files.some((file) => /сертификат/i.test(file.kind)) ? '' : '<p class="pf-detail-document__notice">В переданном комплекте отдельный файл сертификата для этого материала не обнаружен. Нормативные ссылки в каталоге приведены отдельно от списка доступных файлов.</p>';
   return `<section class="pf-detail-documents" id="documents" aria-labelledby="documents-title">
   <div class="pf-detail-documents__heading pf-container">
     <div><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/certification.svg`)}" alt="" aria-hidden="true">Документы продукта</p><h2 id="documents-title">${escapeHtml(page.docHeading ?? `Документы — ${page.title}`)}</h2>${paragraphHtml(intro)}</div>
   </div>
-  <div class="pf-container"><div class="pf-detail-documents__files">${rows || '<p>Локальные официальные файлы для страницы не найдены.</p>'}</div>${noCertificate}</div>
+  <div class="pf-container"><div class="pf-detail-documents__files">${rows}</div></div>
 </section>`;
 }
 
 function renderBenefits(page, benefits) {
+  if (!benefits.length) return '';
   const items = benefits.length ? benefits.map((text, index) => {
-    const title = page.benefitTitles[index] ?? text.split(/[.;:]/, 1)[0];
+    const delimiter = text.search(/[.;:]/);
+    const title = delimiter > 0 && delimiter < 80 ? text.slice(0, delimiter).trim() : text;
+    const detail = title === text ? '' : text.slice(delimiter + 1).trim();
     const icon = page.benefitIcons[index % page.benefitIcons.length] ?? 'verified.svg';
-    return `<li><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><div><strong>${escapeHtml(title)}</strong><span>${escapeHtml(text)}</span></div></li>`;
+    return `<li><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><div><strong>${escapeHtml(title)}</strong>${detail ? `<span>${escapeHtml(detail)}</span>` : ''}</div></li>`;
   }).join('\n') : '';
-  const highlight = page.lifespan ? `<div class="pf-detail-benefits__lifespan"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/verified.svg`)}" width="36" height="36" alt="" aria-hidden="true"><strong>${escapeHtml(page.lifespan)}</strong></div>` : '';
   return `<section class="pf-section pf-section--dark pf-detail-benefits" id="benefits" aria-labelledby="benefits-title">
-    <div class="pf-container"><div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/verified.svg`)}" alt="" aria-hidden="true">${escapeHtml(page.benefitLabel ?? (page.kind === 'system' ? 'Система и эксплуатация' : 'Свойства материала'))}</p><h2 id="benefits-title">${escapeHtml(page.benefitHeading)}</h2><p class="pf-section-lead">${escapeHtml(page.benefitLead)}</p></div>
-    <ul class="pf-detail-benefits__list">${items}</ul>${highlight}</div>
+    <div class="pf-container"><div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/verified.svg`)}" alt="" aria-hidden="true">${escapeHtml(page.benefitLabel ?? (page.kind === 'system' ? 'Система и эксплуатация' : 'Свойства материала'))}</p><h2 id="benefits-title">${escapeHtml(page.benefitHeading)}</h2></div>
+    <ul class="pf-detail-benefits__list">${items}</ul></div>
   </section>`;
 }
 
 function relatedMarkup(page) {
-  if (!page.related.length) {
-    return `<div class="pf-detail-related__note"><p>Для кабельных линий применяется самостоятельный материал ПИРОФЛЕКС-КАБЕЛЬ. Грунты и эмали для металлических конструкций каталогом как сопутствующие покрытия не назначены.</p></div>`;
-  }
+  if (!page.related.length) return '';
   return `<div class="pf-related-materials">${page.related.map((slug) => {
     const item = products.get(slug);
     const pageHref = item.href;
     const imageHref = relativeHref(item.image);
     return `<article class="pf-related-material" style="--pf-related-accent:${item.color}">
       <img src="${imageHref}" width="1200" height="1200" alt="${escapeHtml(item.title)}" loading="lazy">
-      <div><p class="pf-related-material__code">${escapeHtml(item.code)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.short)}</p><a class="pf-text-link" href="${pageHref}">Подробнее о продукте</a></div>
+      <div><p class="pf-related-material__code">${escapeHtml(item.code)}</p><h3>${escapeHtml(item.title)}</h3><a class="pf-text-link" href="${pageHref}">Подробнее о продукте</a></div>
     </article>`;
   }).join('\n')}</div>`;
 }
@@ -537,16 +520,17 @@ function renderSystemLayers(page, descriptionLines) {
     const slug = slugByName.find(([name]) => normalized.includes(name))?.[1];
     const product = slug ? products.get(slug) : null;
     const image = product ? relativeHref(product.image) : relativeHref(`assets/site/icons/${page.iconFolder}/technical-characteristics.svg`);
-    const label = product?.title ?? 'Металлическое основание';
-    const desc = product ? item.replace(new RegExp(`^.*?${product.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*`, 'i'), '').replace(/^[-—,:\s]+/, '') : 'Основание конструкции';
+    const label = product?.title ?? item.replace(/[.;]$/, '');
+    const desc = product ? item.replace(new RegExp(`^.*?${product.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*`, 'i'), '').replace(/^[-—,:\s]+/, '') : '';
     const layerHref = product ? `<a href="${product.href}">Страница материала</a>` : '';
-    return `<li style="--pf-layer-accent:${product?.color ?? page.secondary ?? page.accent}"><span class="pf-system-layer__index">${String(index + 1).padStart(2, '0')}</span><img src="${image}" width="64" height="64" alt="" aria-hidden="true"><div><strong>${escapeHtml(label)}</strong><span>${escapeHtml(desc || item)}</span>${layerHref}</div></li>`;
+    return `<li style="--pf-layer-accent:${product?.color ?? page.secondary ?? page.accent}"><span class="pf-system-layer__index">${String(index + 1).padStart(2, '0')}</span><img src="${image}" width="64" height="64" alt="" aria-hidden="true"><div><strong>${escapeHtml(label)}</strong>${desc ? `<span>${escapeHtml(desc)}</span>` : ''}${layerHref}</div></li>`;
   }).join('\n');
   return `<div class="pf-system-layers"><p class="pf-system-layers__title">Слои снизу вверх</p><ol>${layerHtml}</ol></div>`;
 }
 
 function renderTech(page, technologyLines, technologyParas) {
   const items = bulletItems(technologyLines);
+  if (!items.length && !technologyParas.length) return '';
   const steps = items.map((item, index) => {
     const splitAt = item.search(/[.;:]/);
     const title = splitAt > 12 && splitAt < 72 ? item.slice(0, splitAt) : `Этап ${index + 1}`;
@@ -556,19 +540,20 @@ function renderTech(page, technologyLines, technologyParas) {
   }).join('\n');
   const body = items.length ? `<ol class="pf-detail-steps">${steps}</ol>` : `<div class="pf-detail-tech-prose">${paragraphHtml(technologyParas)}</div>`;
   return `<section class="pf-section pf-section--light pf-detail-application-tech" id="application-technology" aria-labelledby="technology-title">
-    <div class="pf-container"><div class="pf-heading pf-detail-tech-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/preparation.svg`)}" alt="" aria-hidden="true">Технология нанесения</p><h2 id="technology-title">${escapeHtml(page.techHeading ?? 'Подготовка и условия работ')}</h2><p class="pf-section-lead">${escapeHtml(page.techLead)}</p></div>${body}</div>
+    <div class="pf-container"><div class="pf-heading pf-detail-tech-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/preparation.svg`)}" alt="" aria-hidden="true">Технология нанесения</p><h2 id="technology-title">${escapeHtml(page.techHeading ?? 'Подготовка и условия работ')}</h2></div>${body}</div>
   </section>`;
 }
 
 function renderStorage(page, storageLines) {
   const sourceText = paragraphs(storageLines);
+  if (!sourceText.length && /^отдельно не указан$/i.test(page.storage.range)) return '';
+  const extraNote = page.storage.note ? `<div class="pf-detail-storage__facts"><div><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/storage-condition.svg`)}" width="36" height="36" alt="" aria-hidden="true"><p><strong>Условия хранения</strong><span>${escapeHtml(page.storage.note)}</span></p></div></div>` : '';
   return `<section class="pf-detail-storage" id="storage" aria-labelledby="storage-title">
     <div class="pf-container pf-detail-storage__inner"><div class="pf-detail-storage__top">
       <div class="pf-detail-storage__intro"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/storage-condition.svg`)}" alt="" aria-hidden="true">Хранение</p><h2 id="storage-title">${escapeHtml(page.storageHeading ?? 'Условия хранения')}</h2>${paragraphHtml(sourceText, '')}</div>
       <p class="pf-detail-storage__temperature"><strong>${escapeHtml(page.storage.range)}</strong><span>${escapeHtml(page.storage.period)}</span></p>
     </div>
-    <div class="pf-detail-storage__facts"><div><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/storage-condition.svg`)}" width="36" height="36" alt="" aria-hidden="true"><p><strong>Хранение и перевозка</strong><span>${escapeHtml(page.storage.note)}</span></p></div><div><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/storage-period.svg`)}" width="36" height="36" alt="" aria-hidden="true"><p><strong>${escapeHtml(page.storage.period)}</strong><span>Условия и срок проверяйте по документам конкретного материала и маркировке партии.</span></p></div></div>
-    <p class="pf-detail-storage__note">Не допускайте применения материала с нарушенной упаковкой или истёкшим сроком хранения.</p></div>
+    ${extraNote}</div>
   </section>`;
 }
 
@@ -598,7 +583,7 @@ function headerMarkup(page) {
         <details class="pf-nav-group"><summary class="pf-nav__link">Продукты</summary><div class="pf-nav__dropdown">${productsHtml}</div></details>
         <details class="pf-nav-group"><summary class="pf-nav__link">Системы</summary><div class="pf-nav__dropdown">${systemsHtml}</div></details>
         <a class="pf-nav__link" href="../services.html">Сервисы</a><a class="pf-nav__link" href="../documents.html?product=${page.slug}">Документы</a>
-        <a class="pf-nav__link" href="../partners.html">Партнерам</a><a class="pf-nav__link" href="../contacts.html">Контакты</a>
+        <a class="pf-nav__link" href="../partners.html">Партнерам</a><a class="pf-nav__link" href="../contacts.html">Контакты</a><a class="pf-nav__link pf-nav__link--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Скачать каталог</a>
       </div>
       <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
         <a class="pf-button pf-button--small" href="../contacts.html">Связаться</a>
@@ -651,6 +636,7 @@ async function buildPage(page, sections, docs) {
   const descriptionParas = paragraphs(description.lines);
   const descriptionHeading = page.descriptionHeading ?? (description.heading === 'Состав и визуальные материалы' ? 'Состав системы' : 'Описание материала');
   const applicationIcons = page.applications.map(([icon, label]) => `<li><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><span>${escapeHtml(label)}</span></li>`).join('');
+  const applicationList = applicationIcons ? `<ul class="pf-detail-applications" aria-label="Объекты и условия применения">${applicationIcons}</ul>` : '';
   const applicationText = areaParagraphs.length ? areaParagraphs : firstParas;
   const factHtml = page.facts.length ? `<section class="pf-detail-facts" id="quickfacts" aria-label="Ключевые характеристики ${escapeHtml(page.title)}"><div class="pf-container pf-detail-facts__grid" style="--pf-fact-count:${page.facts.length}">${page.facts.map(([icon, value, label]) => `<div><div class="pf-detail-facts__value"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><strong>${escapeHtml(value)}</strong></div><span>${escapeHtml(label)}</span></div>`).join('')}</div></section>` : '';
   const expensesText = paragraphs(expenses.lines);
@@ -661,9 +647,10 @@ async function buildPage(page, sections, docs) {
     const rows = markdownTable(md.split(/\r?\n/));
     return renderExpenseTable(rows, table.label, table.mode, table.source);
   }));
-  const expenseContent = expenseTables.length ? expenseTables.join('\n') : `<div class="pf-expense-note"><p>${escapeHtml(page.expenseNote ?? expensesText.join(' '))}</p></div>`;
+  const expenseCopy = page.expenseNote ?? '';
+  const expenseContent = expenseTables.length ? expenseTables.join('\n') : (expenseCopy ? `<div class="pf-expense-note"><p>${escapeHtml(expenseCopy)}</p></div>` : '');
   const jsonLd = JSON.stringify(productSchema(page)).replaceAll('<', '\\u003c');
-  const subtitle = page.heroLead ?? firstParas.join(' ');
+  const subtitle = firstParas.join(' ');
   const secondary = page.secondary ? `; --pf-product-secondary:${page.secondary}` : '';
   const labelForBenefits = page.benefitLabel ?? (page.kind === 'system' ? 'Система и эксплуатация' : 'Свойства материала');
   const docsSection = renderDocuments(page, docs, certification.lines);
@@ -673,16 +660,20 @@ async function buildPage(page, sections, docs) {
   const schemaTitle = `${page.title} — ПИРОФЛЕКС`;
   const appHeading = page.areaHeading ?? 'Область применения';
   const storageSection = renderStorage(page, storage.lines);
-  const relatedTitle = page.relatedHeading ?? (page.kind === 'system' ? 'Материалы системы' : page.related.length ? 'Сопутствующие материалы' : 'Связанные решения');
+  const relatedTitle = page.relatedHeading ?? (page.kind === 'system' ? 'Материалы системы' : 'Сопутствующие материалы');
+  const hasExpenses = Boolean(expenseTables.length || expenseContent);
+  const relatedSection = page.related.length ? `<section class="pf-section pf-section--dark pf-detail-related" id="related-materials" aria-labelledby="related-title"><div class="pf-container">
+      <div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/related-materials.svg`)}" width="36" height="36" alt="" aria-hidden="true">${page.kind === 'system' ? 'Слои и компоненты' : 'Сопутствующие материалы'}</p><h2 id="related-title">${escapeHtml(relatedTitle)}</h2></div>
+      ${relatedMarkup(page)}
+    </div></section>` : '';
   const titleId = page.slug.replaceAll('-', '') + '-title';
   const headingId = page.slug.replaceAll('-', '') + '-application-title';
   const htmlSections = `
     <section class="pf-detail-hero pf-section--dark" id="overview" aria-labelledby="${titleId}">
       <div class="pf-container pf-detail-hero__inner"><div class="pf-detail-hero__copy">
         <p class="pf-detail-code"><span>${escapeHtml(page.code)}</span><span>${page.tu ? `ТУ ${escapeHtml(page.tu)}` : 'СИСТЕМА-Т · технические документы по компонентам'}</span></p>
-        <h1 id="${titleId}">${escapeHtml(page.title)}</h1><p class="pf-detail-hero__category">${escapeHtml(page.category)}</p>
-        <p class="pf-detail-hero__lead">${escapeHtml(subtitle)}</p>${materialNote}
-        <div class="pf-detail-hero__actions"><a class="pf-button" href="#expenses">${page.expenseTables.length ? 'Таблицы расходов' : 'Условия применения'}</a><a class="pf-text-link" href="#documents">Документы и регламенты</a></div>
+        <h1 id="${titleId}">${escapeHtml(page.title)}</h1><p class="pf-detail-hero__lead">${escapeHtml(subtitle)}</p>${materialNote}
+        <div class="pf-detail-hero__actions"><a class="pf-button" href="${hasExpenses ? '#expenses' : '#application'}">${hasExpenses ? 'Таблицы расходов' : 'Область применения'}</a><a class="pf-text-link" href="#documents">Документы</a></div>
       </div><figure class="pf-detail-hero__visual"><img src="${relativeHref(page.heroImage)}" width="1200" height="1200" alt="${escapeHtml(page.heroAlt)}"></figure></div>
       <a class="pf-detail-scroll" href="#application" aria-label="Перейти к области применения"><span></span></a>
     </section>
@@ -691,35 +682,31 @@ async function buildPage(page, sections, docs) {
       <div class="pf-container pf-detail-application__grid"><div class="pf-detail-copy">
         <p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/application-industrial.svg`)}" width="36" height="36" alt="" aria-hidden="true">Область применения</p>
         <h2 id="${headingId}">${escapeHtml(appHeading)}</h2>${paragraphHtml(applicationText, 'pf-section-lead')}
-        <ul class="pf-detail-applications" aria-label="Объекты и условия применения">${applicationIcons}</ul>
-        ${page.kind === 'system' ? `<p class="pf-detail-note">${page.slug === 'system-t-ultra' ? 'Наружная область, климатическая зона и финишный слой определяются проектом и подтверждённым системным регламентом.' : 'Для открытой атмосферы каталог предусматривает защитно-декоративный слой ПИРОФЛЕКС-ФИНИШ.'}</p>` : ''}
+        ${applicationList}
       </div><figure class="pf-detail-application__visual"><img src="${relativeHref(page.areaImage)}" width="1230" height="812" alt="${escapeHtml(page.areaAlt)}" loading="lazy"></figure></div>
     </section>
     ${renderBenefits(page, benefits)}
     <section class="pf-section pf-section--light pf-detail-specs${materialClass}" id="specifications" aria-labelledby="specifications-title">
-      <div class="pf-container pf-detail-specs__grid"><div class="pf-detail-copy">
+      <div class="pf-container pf-detail-specs__grid${specRows.length > 1 ? '' : ' pf-detail-specs__grid--text-only'}"><div class="pf-detail-copy">
         <p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/material-description.svg`)}" width="36" height="36" alt="" aria-hidden="true">${page.kind === 'system' ? 'Состав системы' : 'Описание материала'}</p>
         <h2 id="specifications-title">${escapeHtml(descriptionHeading)}</h2>${paragraphHtml(descriptionParas)}${systemLayers}
-      </div><div class="pf-detail-specs__table-wrap">
+      </div>${specRows.length > 1 ? `<div class="pf-detail-specs__table-wrap">
         <p class="pf-detail-subheading"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/technical-characteristics.svg`)}" width="36" height="36" alt="" aria-hidden="true">${page.kind === 'system' ? 'Технические характеристики системы' : 'Технические характеристики'}</p>
-        ${specRows.length > 1 ? renderDefinitionTable(specRows) : `<div class="pf-detail-data-note"><strong>Отдельная таблица характеристик не приведена</strong><p>${escapeHtml(page.slug === 'therma-ultra' || page.slug === 'therma-epoxy' ? 'Каталог показывает этот материал как компонент системы. Системные характеристики не относятся автоматически к отдельному компоненту.' : techSpecs.heading ? paragraphs(techSpecs.lines).join(' ') : 'Используйте подтверждённые условия и официальные документы, перечисленные ниже.')}</p></div>`}
-      </div></div>
+        ${renderDefinitionTable(specRows)}
+      </div>` : ''}</div>
     </section>
     ${docsSection}
-    <section class="pf-section pf-section--dark pf-detail-expenses" id="expenses" aria-labelledby="expenses-title">
-      <div class="pf-container"><div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/consumption.svg`)}" width="36" height="36" alt="" aria-hidden="true">Толщина и расход</p><h2 id="expenses-title">${escapeHtml(page.expenseHeading)}</h2>${paragraphHtml(expensesText, 'pf-section-lead')}</div>
-      ${page.expenseTables.length ? '<p class="pf-detail-expenses__note">ПТМ — приведённая толщина металла. Сверяйте толщину и расход каждого слоя по требуемому пределу огнестойкости; пустые значения в официальной таблице обозначены тире.</p>' : ''}${expenseContent}</div>
-    </section>
+    ${hasExpenses ? `<section class="pf-section pf-section--dark pf-detail-expenses" id="expenses" aria-labelledby="expenses-title">
+      <div class="pf-container"><div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/consumption.svg`)}" width="36" height="36" alt="" aria-hidden="true">Толщина и расход</p><h2 id="expenses-title">${escapeHtml(page.expenseHeading)}</h2></div>
+      ${expenseContent}</div>
+    </section>` : ''}
     ${techSection}
     ${storageSection}
-    <section class="pf-section pf-section--dark pf-detail-related" id="related-materials" aria-labelledby="related-title"><div class="pf-container">
-      <div class="pf-heading"><p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/related-materials.svg`)}" width="36" height="36" alt="" aria-hidden="true">${page.kind === 'system' ? 'Слои и компоненты' : 'Сопутствующие материалы'}</p><h2 id="related-title">${escapeHtml(relatedTitle)}</h2><p class="pf-section-lead">${escapeHtml(page.kind === 'system' ? 'Последовательность слоёв и состав проверяйте по проекту и регламенту системы.' : 'Выбирайте совместимые материалы по проектному решению и условиям эксплуатации.')}</p></div>
-      ${relatedMarkup(page)}
-    </div></section>
-    <section class="pf-detail-contact" id="contact" aria-labelledby="contact-title"><div class="pf-container pf-detail-contact__inner"><div><p class="pf-eyebrow">Подбор для конкретного объекта</p><h2 id="contact-title">Обсудите решение с командой ПИРОФЛЕКС</h2></div><div class="pf-detail-contact__actions"><a class="pf-button" href="../index.html#contacts">Связаться с командой</a><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div></div></section>`;
+    ${relatedSection}
+    `;
   const navItems = [
-    ['overview', 'Обзор'], ['application', 'Применение'], ['benefits', page.kind === 'product' && page.slug.startsWith('therma-') ? 'Роль в системе' : 'Преимущества'],
-    ['specifications', 'Характеристики'], ['documents', 'Документы'], ['expenses', 'Расход'], ['application-technology', 'Нанесение'], ['storage', 'Хранение'], ['related-materials', page.kind === 'system' ? 'Слои' : 'Материалы']
+    ['overview', 'Обзор'], ['application', 'Применение'], ...(benefits.length ? [['benefits', 'Преимущества']] : []),
+    ['specifications', 'Характеристики'], ['documents', 'Документы'], ...(hasExpenses ? [['expenses', 'Расход']] : []), ...(techSection ? [['application-technology', 'Нанесение']] : []), ...(storageSection ? [['storage', 'Хранение']] : []), ...(relatedSection ? [['related-materials', page.kind === 'system' ? 'Слои' : 'Материалы']] : [])
   ];
   return `<!doctype html>
 <html lang="ru">
@@ -838,6 +825,14 @@ async function updateSiteNavigation() {
   ultra = ultra.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Системы<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Системы</summary><div class="pf-nav__dropdown">${ultraNav.systemsHtml}</div></details>`);
   ultra = ultra.replace(/(<a class="pf-nav__link" href=")[^"]+(">)Документы<\/a>/, '$1../documents.html?product=ultra$2Документы</a>');
   ultra = ultra.replace(/(<a class="pf-nav__link" href=")[^"]+(">)Контакты<\/a>/, '$1../contacts.html$2Контакты</a>');
+  if (!ultra.includes('pf-nav__link--catalog')) {
+    ultra = ultra.replace(/(<a class="pf-nav__link" href="\.\.\/contacts\.html">Контакты<\/a>)/, `$1<a class="pf-nav__link pf-nav__link--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Скачать каталог</a>`);
+  }
+  ultra = ultra.replace('Локальные файлы</p>', 'Технические документы</p>');
+  ultra = ultra.replace('<p>Официальные PDF из папки продукта. Цены на страницу не переносились.</p>', '');
+  ultra = ultra.replaceAll('Толщина слоя в карточке', 'Толщина слоя');
+  ultra = ultra.replaceAll('Расход в карточке', 'Расход');
+  ultra = ultra.replace(/\s*<p class="pf-detail-expenses__note">[^<]*<\/p>/g, '');
   ultra = ultra.replace(/(<a class="pf-button pf-button--small" href=")[^"]+(">)Связаться<\/a>/, '$1../contacts.html$2Связаться</a>');
   ultra = ultra.replaceAll('../index.html#services', '../services.html').replaceAll('../index.html#partners', '../partners.html');
   ultra = ultra.replace(/<div class="pf-footer__column"><h2>Продукты<\/h2>[\s\S]*?<\/div>/, `<div class="pf-footer__column"><h2>Продукты</h2>${PRODUCT_ORDER.map((slug) => `<a href="${slug === 'ultra' ? '#top' : products.get(slug).href}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>`);
@@ -889,8 +884,8 @@ function utilityHeader(locale, currentPage) {
   const en = locale === 'en';
   const prefix = en ? '../' : '';
   const text = en
-    ? { home: 'PYROFLEX — home', products: 'Products', systems: 'Systems', services: 'Services', documents: 'Documents', partners: 'Partners', contacts: 'Contacts', connect: 'Contact us', choose: 'Choose language', ru: 'RU Russian', english: 'EN English' }
-    : { home: 'ПИРОФЛЕКС — на главную', products: 'Продукты', systems: 'Системы', services: 'Сервисы', documents: 'Документы', partners: 'Партнерам', contacts: 'Контакты', connect: 'Связаться', choose: 'Выбрать язык', ru: 'RU Russian', english: 'EN English' };
+    ? { home: 'PYROFLEX — home', products: 'Products', systems: 'Systems', services: 'Services', documents: 'Documents', partners: 'Partners', contacts: 'Contacts', catalog: 'Download catalogue', connect: 'Contact us', choose: 'Choose language', ru: 'RU Russian', english: 'EN English' }
+    : { home: 'ПИРОФЛЕКС — на главную', products: 'Продукты', systems: 'Системы', services: 'Сервисы', documents: 'Документы', partners: 'Партнерам', contacts: 'Контакты', catalog: 'Скачать каталог', connect: 'Связаться', choose: 'Выбрать язык', ru: 'RU Russian', english: 'EN English' };
   const productLinks = PRODUCT_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
   const systemLinks = SYSTEM_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
   const russianHref = en ? `${prefix}${currentPage}.html` : `${currentPage}.html`;
@@ -906,6 +901,7 @@ function utilityHeader(locale, currentPage) {
         <a class="pf-nav__link" href="documents.html"${currentPage === 'documents' ? ' aria-current="page"' : ''}>${text.documents}</a>
         <a class="pf-nav__link" href="partners.html"${currentPage === 'partners' ? ' aria-current="page"' : ''}>${text.partners}</a>
         <a class="pf-nav__link" href="contacts.html"${currentPage === 'contacts' ? ' aria-current="page"' : ''}>${text.contacts}</a>
+        <a class="pf-nav__link pf-nav__link--catalog" href="${prefix}${CATALOG_DOWNLOAD}" download="PYROFLEX-catalog.pdf">${text.catalog}</a>
       </div>
       <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
         <a class="pf-button pf-button--small" href="contacts.html">${text.connect}</a>
@@ -1110,8 +1106,7 @@ async function collectArchiveDocuments() {
   const brandFolder = path.resolve(ROOT, BRAND_ROOT);
   const commonFiles = (await readdir(brandFolder)).filter((name) => name.toLowerCase().endsWith('.pdf'));
   for (const filename of commonFiles) add({ path: path.posix.join(BRAND_ROOT, filename), filename, title: documentTitle(filename), kind: 'Прайс-лист и сводные расходы' }, 'common');
-  const cataloguePath = 'branding/пирофлекс каталог-сжатый (1).pdf';
-  add({ path: cataloguePath, filename: path.basename(cataloguePath), title: 'Каталог продукции — сжатая версия', kind: 'Каталог продукции' }, 'common');
+  add({ path: CATALOG_DOWNLOAD, filename: 'ПИРОФЛЕКС-каталог.pdf', title: 'Каталог продукции ПИРОФЛЕКС', kind: 'Каталог продукции' }, 'common');
   const rows = await Promise.all([...documents.values()].map(async (document) => {
     const fileInfo = await stat(path.resolve(ROOT, document.path));
     const pages = PRODUCT_PAGE_ORDER.filter((slug) => document.pages.has(slug));
@@ -1130,14 +1125,16 @@ function renderArchiveRow(document, locale) {
     const item = products.get(slug);
     return `<a class="pf-doc-tag" href="${prefix}products/${item.href}" style="--pf-doc-accent:${item.color}">${escapeHtml(utilityGroupTitle(slug, locale))}</a>`;
   }).join('');
-  const searchable = [document.title, document.filename, document.kind, ...pageSlugs.map((slug) => utilityGroupTitle(slug, locale))].join(' ');
+  const displayTitle = en && document.kind === 'Каталог продукции' ? 'PYROFLEX product catalogue' : document.title;
+  const displayFilename = en && document.kind === 'Каталог продукции' ? 'PYROFLEX-catalog.pdf' : document.filename;
+  const searchable = [displayTitle, displayFilename, document.kind, ...pageSlugs.map((slug) => utilityGroupTitle(slug, locale))].join(' ');
   const pageCount = pageSlugs.join(' ');
   const fileHref = rootRelativeHref(document.path, prefix);
   const size = document.size < 1024 * 1024 ? `${Math.max(1, Math.round(document.size / 1024))} KB` : `${(document.size / (1024 * 1024)).toFixed(1)} MB`;
   return `<article class="pf-doc-row" data-pages="${escapeHtml(pageCount)}" data-kind="${escapeHtml(document.kind)}" data-search="${escapeHtml(searchable.toLowerCase())}">
     <span class="pf-doc-row__format" aria-hidden="true">PDF</span>
-    <div class="pf-doc-row__body"><p class="pf-doc-row__kind">${escapeHtml(utilityDocumentKind(document.kind, locale))}</p><h3>${escapeHtml(document.title)}</h3><p class="pf-doc-row__filename">${escapeHtml(document.filename)}</p><div class="pf-doc-row__tags">${productTags}</div></div>
-    <div class="pf-doc-row__action"><span>${size}</span><a href="${fileHref}" target="_blank" rel="noopener">${en ? 'Open PDF' : 'Открыть PDF'}<span aria-hidden="true">↗</span></a></div>
+    <div class="pf-doc-row__body"><p class="pf-doc-row__kind">${escapeHtml(utilityDocumentKind(document.kind, locale))}</p><h3>${escapeHtml(displayTitle)}</h3><p class="pf-doc-row__filename">${escapeHtml(displayFilename)}</p><div class="pf-doc-row__tags">${productTags}</div></div>
+    <div class="pf-doc-row__action"><span>${size}</span><a href="${fileHref}"${document.kind === 'Каталог продукции' ? ` download="${escapeHtml(displayFilename)}"` : ' target="_blank" rel="noopener"'}>${document.kind === 'Каталог продукции' ? (en ? 'Download' : 'Скачать') : (en ? 'Open PDF' : 'Открыть PDF')}<span aria-hidden="true">${document.kind === 'Каталог продукции' ? '↓' : '↗'}</span></a></div>
   </article>`;
 }
 
@@ -1152,7 +1149,7 @@ async function documentsPageMarkup(locale, documents) {
     empty: 'No documents match these filters.', fileTitle: 'Local document archive', intro: 'Files shared by several products appear once, with links to every relevant product page.',
     heading: 'Documents and certificates', note: 'Technical and regulatory information should be checked against the current approved revision before project use.'
   } : {
-    title: 'Документы продуктов', description: 'Каталог сертификатов, технических условий, регламентов, протоколов испытаний и таблиц расходов ПИРОФЛЕКС.',
+    title: 'Документы продуктов', description: 'Документы ПИРОФЛЕКС: сертификаты, технические условия, регламенты, протоколы испытаний и таблицы расходов.',
     eyebrow: 'БИБЛИОТЕКА ДОКУМЕНТОВ', lead: 'Выберите продукт или систему, чтобы показать относящиеся к ним файлы. Список можно сузить по типу документа или поиску по названию.',
     product: 'Продукт или система', allProducts: 'Все продукты и системы', kind: 'Тип документа', allKinds: 'Все типы документов', search: 'Поиск',
     searchPlaceholder: 'Название документа или файла', reset: 'Сбросить фильтры', count: 'Показано', of: 'из', files: 'документов',
@@ -1171,6 +1168,7 @@ async function documentsPageMarkup(locale, documents) {
       <p class="pf-eyebrow">${text.eyebrow}</p><h1 id="documents-title">${text.title}</h1><p>${text.lead}</p>
       <div class="pf-document-hero__count"><strong>${expectedCount}</strong><span>${text.files}</span></div>
     </div></section>
+    <section class="pf-catalog-cta pf-document-catalog" aria-label="${en ? 'PYROFLEX product catalogue' : 'Каталог продукции ПИРОФЛЕКС'}"><div class="pf-catalog-cta__inner"><h2>${en ? 'Download the PYROFLEX catalogue' : 'Скачайте каталог ПИРОФЛЕКС'}</h2><a class="pf-button pf-button--dark" href="${prefix}${CATALOG_DOWNLOAD}" download="${en ? 'PYROFLEX-catalog.pdf' : 'ПИРОФЛЕКС-каталог.pdf'}">${en ? 'Download' : 'Скачать'}</a></div></section>
     <section class="pf-document-directory" id="document-directory" aria-labelledby="document-directory-title">
       <div class="pf-container">
         <div class="pf-document-directory__heading"><div><p class="pf-eyebrow">${text.fileTitle}</p><h2 id="document-directory-title">${text.heading}</h2><p>${text.intro}</p></div><p class="pf-document-directory__note">${text.note}</p></div>

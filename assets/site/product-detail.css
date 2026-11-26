@@ -81,6 +81,7 @@ body.pf-product-detail section[id] { scroll-margin-top: 36px; }
 .pf-detail-benefits__lifespan strong { font-size: 17px; font-weight: 500; line-height: 1.45; }
 
 .pf-detail-specs__grid { align-items: start; }
+.pf-detail-specs__grid--text-only { grid-template-columns: minmax(0, 1fr); }
 .pf-detail-specs__table-wrap { width: 100%; }
 .pf-spec-table { width: 100%; border-collapse: collapse; color: var(--pf-ink); font-size: 15px; line-height: 1.5; }
 .pf-spec-table tr { border-top: 1px solid #d5d5d9; }
