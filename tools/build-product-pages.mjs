@@ -585,7 +585,7 @@ function headerMarkup(page) {
         <a class="pf-nav__link" href="../services.html">Сервисы</a><a class="pf-nav__link" href="../documents.html?product=${page.slug}">Документы</a>
         <a class="pf-nav__link" href="../partners.html">Партнерам</a><a class="pf-nav__link" href="../contacts.html">Контакты</a><a class="pf-nav__link pf-nav__link--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Скачать каталог</a>
       </div>
-      <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
+      <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
         <a class="pf-button pf-button--small" href="../contacts.html">Связаться</a>
         <details class="pf-locale"><summary aria-label="Выбрать язык"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5s1.1-6.2 3.3-8.5Z"/></svg> RU</summary><div><a href="../index.html" lang="ru">RU Russian</a><a href="../en/index.html" lang="en">EN English</a></div></details>
       </div>
@@ -596,7 +596,7 @@ function headerMarkup(page) {
 function footerMarkup(page = null) {
   const { productsHtml, systemsHtml } = navLists('');
   return `<footer class="pf-footer"><div class="pf-container"><div class="pf-footer__main">
-    <div class="pf-footer__brand"><a href="../index.html" aria-label="ПИРОФЛЕКС — на главную"><img src="../assets/site/pyroflex-logo.svg" alt="ПИРОФЛЕКС"></a><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
+    <div class="pf-footer__brand"><a href="../index.html" aria-label="ПИРОФЛЕКС — на главную"><img src="../assets/site/pyroflex-logo.svg" alt="ПИРОФЛЕКС"></a><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
     <div class="pf-footer__column"><h2>Продукты</h2>${PRODUCT_ORDER.map((slug) => `<a href="${products.get(slug).href}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>
     <div class="pf-footer__column"><h2>Системы</h2>${SYSTEM_ORDER.map((slug) => `<a href="${products.get(slug).href}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>
     <div class="pf-footer__column"><h2>Навигация</h2><a href="../services.html">Сервисы</a><a href="../documents.html${page ? `?product=${page.slug}` : ''}">Документы</a><a href="../partners.html">Партнерам</a><a href="../index.html#applications">Области применения</a><a href="../contacts.html">Контакты</a></div>
@@ -903,7 +903,7 @@ function utilityHeader(locale, currentPage) {
         <a class="pf-nav__link" href="contacts.html"${currentPage === 'contacts' ? ' aria-current="page"' : ''}>${text.contacts}</a>
         <a class="pf-nav__link pf-nav__link--catalog" href="${prefix}${CATALOG_DOWNLOAD}" download="PYROFLEX-catalog.pdf">${text.catalog}</a>
       </div>
-      <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
+      <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
         <a class="pf-button pf-button--small" href="contacts.html">${text.connect}</a>
         <details class="pf-locale"><summary aria-label="${text.choose}"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5s1.1-6.2 3.3-8.5Z"/></svg> ${en ? 'EN' : 'RU'}</summary><div><a href="${russianHref}" lang="ru">${text.ru}</a><a href="${englishHref}" lang="en">${text.english}</a></div></details>
       </div>
@@ -918,7 +918,7 @@ function utilityFooter(locale) {
   const productLinks = PRODUCT_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
   const systemLinks = SYSTEM_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
   return `<footer class="pf-footer"><div class="pf-container"><div class="pf-footer__main">
-    <div class="pf-footer__brand"><a href="${prefix}index.html" aria-label="PYROFLEX"><img src="${prefix}assets/site/pyroflex-logo.svg" alt="PYROFLEX"></a><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:office@pyroflex.ru">office@pyroflex.ru</a></div>
+    <div class="pf-footer__brand"><a href="${prefix}index.html" aria-label="PYROFLEX"><img src="${prefix}assets/site/pyroflex-logo.svg" alt="PYROFLEX"></a><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
     <div class="pf-footer__column"><h2>${title.products}</h2>${productLinks}</div>
     <div class="pf-footer__column"><h2>${title.systems}</h2>${systemLinks}</div>
     <div class="pf-footer__column"><h2>${title.navigation}</h2><a href="services.html">${title.services}</a><a href="documents.html">${title.documents}</a><a href="partners.html">${title.partners}</a><a href="${prefix}index.html#applications">${title.applications}</a><a href="contacts.html">${title.contacts}</a></div>
@@ -954,11 +954,11 @@ function contactPageMarkup(locale) {
   const text = en ? {
     title: 'Contact PYROFLEX', description: 'Contact the PYROFLEX team about fire protection materials, technical documents and project requirements.', eyebrow: 'CONTACTS',
     lead: 'Talk with the PYROFLEX team about fire protection materials, system selection and your project requirements.', phone: 'Phone', email: 'Email', docs: 'Browse product documents', formTitle: 'Send a request',
-    name: 'Name', emailLabel: 'Email', phoneLabel: 'Phone', message: 'Project or question', consent: 'I agree to the processing of personal data under the privacy policy.', send: 'Prepare email', note: 'Your email application will open with the request details. If it does not, write to office@pyroflex.ru.', privacy: 'privacy policy'
+    name: 'Name', emailLabel: 'Email', phoneLabel: 'Phone', message: 'Project or question', consent: 'I agree to the processing of personal data under the privacy policy.', send: 'Prepare email', note: 'Your email application will open with the request details. If it does not, write to Office@mk101.ru.', privacy: 'privacy policy'
   } : {
     title: 'Контакты ПИРОФЛЕКС', description: 'Контакты команды ПИРОФЛЕКС: консультации по огнезащитным материалам, системам и документам.', eyebrow: 'КОНТАКТЫ',
     lead: 'Свяжитесь с командой ПИРОФЛЕКС по вопросам материалов, выбора системы и требований проекта.', phone: 'Телефон', email: 'Электронная почта', docs: 'Перейти к документам продуктов', formTitle: 'Отправить запрос',
-    name: 'Имя', emailLabel: 'Почта', phoneLabel: 'Телефон', message: 'Объект или вопрос', consent: 'Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности.', send: 'Подготовить письмо', note: 'Откроется ваша почтовая программа с данными запроса. Если она не открылась, напишите на office@pyroflex.ru.', privacy: 'политикой конфиденциальности'
+    name: 'Имя', emailLabel: 'Почта', phoneLabel: 'Телефон', message: 'Объект или вопрос', consent: 'Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности.', send: 'Подготовить письмо', note: 'Откроется ваша почтовая программа с данными запроса. Если она не открылась, напишите на Office@mk101.ru.', privacy: 'политикой конфиденциальности'
   };
   return `${utilityHtmlStart(locale, text.title, text.description, 'contacts')}
     <section class="pf-section pf-section--dark pf-contacts pf-utility-contact" aria-labelledby="contact-page-title">
@@ -968,7 +968,7 @@ function contactPageMarkup(locale) {
           <p class="pf-eyebrow">${text.eyebrow}</p><h1 id="contact-page-title">${text.title}</h1><p class="pf-section-lead">${text.lead}</p>
           <div class="pf-contact-channels">
             <a href="tel:88001018112"><span>${text.phone}</span><strong>8 (800) 101-8-112</strong></a>
-            <a href="mailto:office@pyroflex.ru"><span>${text.email}</span><strong>office@pyroflex.ru</strong></a>
+            <a href="mailto:Office@mk101.ru"><span>${text.email}</span><strong>Office@mk101.ru</strong></a>
           </div>
           <a class="pf-text-link pf-contact-documents" href="documents.html">${text.docs}</a>
         </div>

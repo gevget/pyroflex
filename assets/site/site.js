@@ -123,8 +123,8 @@
     ].join('\n');
     const status = form.querySelector('.pf-form-status');
     if (status) status.textContent = isEnglish
-      ? 'Your email is ready. If the mail app did not open, write to office@pyroflex.ru.'
-      : 'Подготовлено письмо. Если почтовое приложение не открылось, напишите на office@pyroflex.ru.';
-    window.location.href = `mailto:office@pyroflex.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      ? 'Your email is ready. If the mail app did not open, write to Office@mk101.ru.'
+      : 'Подготовлено письмо. Если почтовое приложение не открылось, напишите на Office@mk101.ru.';
+    window.location.href = `mailto:Office@mk101.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 })();
