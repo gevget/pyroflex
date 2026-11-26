@@ -65,7 +65,9 @@ body.pf-product-detail section[id] { scroll-margin-top: 36px; }
 .pf-detail-subheading { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; color: var(--pf-ink); font-size: 19px; font-weight: 500; line-height: 1.4; }
 .pf-detail-subheading img { display: block; width: 36px; height: 36px; object-fit: contain; }
 .pf-detail-application__visual { overflow: hidden; margin: 0; border-radius: 24px; background: #e7e7e9; }
-.pf-detail-application__visual img { display: block; width: 100%; aspect-ratio: 1.52; object-fit: cover; }
+.pf-detail-application__visual img { display: block; width: 100%; aspect-ratio: 1.52; border-radius: inherit; object-fit: cover; }
+.pf-detail-application__visual--system { aspect-ratio: 1; border-radius: 24px; }
+.pf-detail-application__visual--system img { height: 100%; aspect-ratio: 1; object-fit: cover; }
 
 .pf-detail-benefits .pf-heading { max-width: 740px; }
 .pf-detail-benefits__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; border-top: 1px solid rgba(255,255,255,.22); list-style: none; }
@@ -277,6 +279,8 @@ body.pf-product-detail section[id] { scroll-margin-top: 36px; }
   .pf-detail-application__grid, .pf-detail-specs__grid, .pf-detail-application-tech__grid { grid-template-columns: minmax(0, 1fr); gap: 30px; }
   .pf-detail-application__visual { border-radius: 20px; }
   .pf-detail-application__visual img { aspect-ratio: 1.25; }
+  .pf-detail-application__visual--system { border-radius: 20px; }
+  .pf-detail-application__visual--system img { height: 100%; aspect-ratio: 1; object-fit: cover; }
   .pf-detail-tags { gap: 7px; margin-block: 20px; }
   .pf-detail-tags li { padding: 7px 10px; font-size: 12px; }
   .pf-detail-benefits__list { grid-template-columns: minmax(0, 1fr); }

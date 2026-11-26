@@ -7,6 +7,7 @@ const BRAND_ROOT = 'branding/ОГНЕЗАЩИТНЫЕ СИСТЕМЫ ПИРОФ�
 const CATALOG_DOWNLOAD = 'assets/site/downloads/pyroflex-catalog.pdf';
 const PRODUCT_ORDER = ['ultra', 'base', 'finish', 'acrylic', 'epoxy', 'therma-ultra', 'therma-epoxy', 'cable'];
 const SYSTEM_ORDER = ['system-t-ultra', 'system-t-epoxy'];
+const PRODUCT_MENU_ORDER = [...PRODUCT_ORDER, ...SYSTEM_ORDER];
 
 const pages = [
   {
@@ -558,7 +559,7 @@ function renderStorage(page, storageLines) {
 }
 
 function navLists(currentSlug) {
-  const productsHtml = PRODUCT_ORDER.map((slug) => {
+  const productsHtml = PRODUCT_MENU_ORDER.map((slug) => {
     const item = products.get(slug);
     const current = slug === currentSlug ? ' aria-current="page"' : '';
     const href = slug === currentSlug ? '#top' : item.href;
@@ -574,19 +575,18 @@ function navLists(currentSlug) {
 }
 
 function headerMarkup(page) {
-  const { productsHtml, systemsHtml } = navLists(page.slug);
+  const { productsHtml } = navLists(page.slug);
   return `<header class="pf-header" id="top">
     <a class="pf-brand" href="../index.html" aria-label="ПИРОФЛЕКС — на главную"><img src="../assets/site/pyroflex-logo.svg" alt="ПИРОФЛЕКС"></a>
     <button class="pf-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     <nav class="pf-nav" id="site-navigation" aria-label="Основная навигация">
       <div class="pf-nav__links">
         <details class="pf-nav-group"><summary class="pf-nav__link">Продукты</summary><div class="pf-nav__dropdown">${productsHtml}</div></details>
-        <details class="pf-nav-group"><summary class="pf-nav__link">Системы</summary><div class="pf-nav__dropdown">${systemsHtml}</div></details>
         <a class="pf-nav__link" href="../services.html">Сервисы</a><a class="pf-nav__link" href="../documents.html?product=${page.slug}">Документы</a>
-        <a class="pf-nav__link" href="../partners.html">Партнерам</a><a class="pf-nav__link" href="../contacts.html">Контакты</a><a class="pf-nav__link pf-nav__link--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Скачать каталог</a>
+        <a class="pf-nav__link" href="../partners.html">Партнерам</a><a class="pf-nav__link" href="../contacts.html">Контакты</a>
       </div>
       <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
-        <a class="pf-button pf-button--small" href="../contacts.html">Связаться</a>
+        <div class="pf-header__cta"><a class="pf-button pf-button--small pf-button--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Каталог</a><a class="pf-button pf-button--small" href="../contacts.html">Связаться</a></div>
         <details class="pf-locale"><summary aria-label="Выбрать язык"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5s1.1-6.2 3.3-8.5Z"/></svg> RU</summary><div><a href="../index.html" lang="ru">RU Russian</a><a href="../en/index.html" lang="en">EN English</a></div></details>
       </div>
     </nav>
@@ -638,6 +638,8 @@ async function buildPage(page, sections, docs) {
   const applicationIcons = page.applications.map(([icon, label]) => `<li><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><span>${escapeHtml(label)}</span></li>`).join('');
   const applicationList = applicationIcons ? `<ul class="pf-detail-applications" aria-label="Объекты и условия применения">${applicationIcons}</ul>` : '';
   const applicationText = areaParagraphs.length ? areaParagraphs : firstParas;
+  const applicationVisualClass = page.kind === 'system' ? 'pf-detail-application__visual pf-detail-application__visual--system' : 'pf-detail-application__visual';
+  const applicationImageDimensions = page.kind === 'system' ? 'width="1230" height="1230"' : 'width="1230" height="812"';
   const factHtml = page.facts.length ? `<section class="pf-detail-facts" id="quickfacts" aria-label="Ключевые характеристики ${escapeHtml(page.title)}"><div class="pf-container pf-detail-facts__grid" style="--pf-fact-count:${page.facts.length}">${page.facts.map(([icon, value, label]) => `<div><div class="pf-detail-facts__value"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/${icon}`)}" width="36" height="36" alt="" aria-hidden="true"><strong>${escapeHtml(value)}</strong></div><span>${escapeHtml(label)}</span></div>`).join('')}</div></section>` : '';
   const expensesText = paragraphs(expenses.lines);
   const expenseTables = await Promise.all(page.expenseTables.map(async (table) => {
@@ -683,7 +685,7 @@ async function buildPage(page, sections, docs) {
         <p class="pf-eyebrow pf-eyebrow--icon"><img src="${relativeHref(`assets/site/icons/${page.iconFolder}/application-industrial.svg`)}" width="36" height="36" alt="" aria-hidden="true">Область применения</p>
         <h2 id="${headingId}">${escapeHtml(appHeading)}</h2>${paragraphHtml(applicationText, 'pf-section-lead')}
         ${applicationList}
-      </div><figure class="pf-detail-application__visual"><img src="${relativeHref(page.areaImage)}" width="1230" height="812" alt="${escapeHtml(page.areaAlt)}" loading="lazy"></figure></div>
+      </div><figure class="${applicationVisualClass}"><img src="${relativeHref(page.areaImage)}" ${applicationImageDimensions} alt="${escapeHtml(page.areaAlt)}" loading="lazy"></figure></div>
     </section>
     ${renderBenefits(page, benefits)}
     <section class="pf-section pf-section--light pf-detail-specs${materialClass}" id="specifications" aria-labelledby="specifications-title">
@@ -718,7 +720,7 @@ async function buildPage(page, sections, docs) {
   <title>${escapeHtml(schemaTitle)}</title>
   <link rel="icon" href="../assets/site/pyroflex-logo.svg" type="image/svg+xml">
   <link rel="preload" href="../assets/site/fonts/original-JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/site/fonts.css"><link rel="stylesheet" href="../assets/site/site.css"><link rel="stylesheet" href="../assets/site/product-detail.css?v=23">
+  <link rel="stylesheet" href="../assets/site/fonts.css"><link rel="stylesheet" href="../assets/site/site.css"><link rel="stylesheet" href="../assets/site/product-detail.css?v=24">
   <script src="../assets/site/site.js?v=3" defer></script>
   <script type="application/ld+json">${jsonLd}</script>
 </head>
@@ -759,9 +761,11 @@ async function createIconVariants(page) {
 async function updateSiteNavigation() {
   const indexPath = path.resolve(ROOT, 'index.html');
   let html = await readFile(indexPath, 'utf8');
-  const { productsHtml, systemsHtml } = navLists('');
-  html = html.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Продукты<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Продукты</summary><div class="pf-nav__dropdown">${PRODUCT_ORDER.map((slug) => `<a href="products/${PAGE_FILES[slug]}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div></details>`);
-  html = html.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Системы<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Системы</summary><div class="pf-nav__dropdown">${SYSTEM_ORDER.map((slug) => `<a href="products/${PAGE_FILES[slug]}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div></details>`);
+  const productsHtml = PRODUCT_MENU_ORDER.map((slug) => `<a href="products/${PAGE_FILES[slug]}">${escapeHtml(products.get(slug).nav)}</a>`).join('');
+  html = html.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Продукты<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Продукты</summary><div class="pf-nav__dropdown">${productsHtml}</div></details>`);
+  html = html.replace(/\s*<details class="pf-nav-group"><summary class="pf-nav__link">Системы<\/summary>[\s\S]*?<\/details>/, '');
+  html = html.replace(/<a class="pf-nav__link pf-nav__link--catalog"[^>]*>[\s\S]*?<\/a>/, '');
+  html = html.replace('<a class="pf-button pf-button--small" href="contacts.html">Связаться</a>', `<div class="pf-header__cta"><a class="pf-button pf-button--small pf-button--catalog" href="${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Каталог</a><a class="pf-button pf-button--small" href="contacts.html">Связаться</a></div>`);
   html = html.replaceAll('href="#documents"', 'href="documents.html"').replaceAll('href="#contacts"', 'href="contacts.html"');
   html = html.replaceAll('href="#services"', 'href="services.html"').replaceAll('href="#partners"', 'href="partners.html"');
   html = html.replace('assets/site/site.js"', 'assets/site/site.js?v=3"');
@@ -800,6 +804,11 @@ async function updateSiteNavigation() {
 
   const englishIndexPath = path.resolve(ROOT, 'en/index.html');
   let english = await readFile(englishIndexPath, 'utf8');
+  const englishProductLinks = PRODUCT_MENU_ORDER.map((slug) => `<a href="../products/${PAGE_FILES[slug]}">${escapeHtml(EN_PRODUCT_NAMES[slug])}</a>`).join('');
+  english = english.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Products<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Products</summary><div class="pf-nav__dropdown">${englishProductLinks}</div></details>`);
+  english = english.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Systems<\/summary>[\s\S]*?<\/details>/, '');
+  english = english.replace(/<a class="pf-nav__link pf-nav__link--catalog"[^>]*>[\s\S]*?<\/a>/, '');
+  english = english.replace('<a class="pf-button pf-button--small" href="contacts.html">Contact us</a>', `<div class="pf-header__cta"><a class="pf-button pf-button--small pf-button--catalog" href="../${CATALOG_DOWNLOAD}" download="PYROFLEX-catalog.pdf">Catalogue</a><a class="pf-button pf-button--small" href="contacts.html">Contact us</a></div>`);
   english = english.replaceAll('href="#documents"', 'href="documents.html"').replaceAll('href="#contacts"', 'href="contacts.html"');
   english = english.replaceAll('href="#services"', 'href="services.html"').replaceAll('href="#partners"', 'href="partners.html"');
   english = english.replace('assets/site/site.js"', 'assets/site/site.js?v=3"');
@@ -822,12 +831,11 @@ async function updateSiteNavigation() {
   let ultra = await readFile(ultraPath, 'utf8');
   const ultraNav = navLists('ultra');
   ultra = ultra.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Продукты<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Продукты</summary><div class="pf-nav__dropdown">${ultraNav.productsHtml}</div></details>`);
-  ultra = ultra.replace(/<details class="pf-nav-group"><summary class="pf-nav__link">Системы<\/summary>[\s\S]*?<\/details>/, `<details class="pf-nav-group"><summary class="pf-nav__link">Системы</summary><div class="pf-nav__dropdown">${ultraNav.systemsHtml}</div></details>`);
+  ultra = ultra.replace(/\s*<details class="pf-nav-group"><summary class="pf-nav__link">Системы<\/summary>[\s\S]*?<\/details>/, '');
   ultra = ultra.replace(/(<a class="pf-nav__link" href=")[^"]+(">)Документы<\/a>/, '$1../documents.html?product=ultra$2Документы</a>');
   ultra = ultra.replace(/(<a class="pf-nav__link" href=")[^"]+(">)Контакты<\/a>/, '$1../contacts.html$2Контакты</a>');
-  if (!ultra.includes('pf-nav__link--catalog')) {
-    ultra = ultra.replace(/(<a class="pf-nav__link" href="\.\.\/contacts\.html">Контакты<\/a>)/, `$1<a class="pf-nav__link pf-nav__link--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Скачать каталог</a>`);
-  }
+  ultra = ultra.replace(/<a class="pf-nav__link pf-nav__link--catalog"[^>]*>[\s\S]*?<\/a>/, '');
+  ultra = ultra.replace('<a class="pf-button pf-button--small" href="../contacts.html">Связаться</a>', `<div class="pf-header__cta"><a class="pf-button pf-button--small pf-button--catalog" href="../${CATALOG_DOWNLOAD}" download="ПИРОФЛЕКС-каталог.pdf">Каталог</a><a class="pf-button pf-button--small" href="../contacts.html">Связаться</a></div>`);
   ultra = ultra.replace('Локальные файлы</p>', 'Технические документы</p>');
   ultra = ultra.replace('<p>Официальные PDF из папки продукта. Цены на страницу не переносились.</p>', '');
   ultra = ultra.replaceAll('Толщина слоя в карточке', 'Толщина слоя');
@@ -839,7 +847,7 @@ async function updateSiteNavigation() {
   ultra = ultra.replace(/<div class="pf-footer__column"><h2>Системы<\/h2>[\s\S]*?<\/div>/, `<div class="pf-footer__column"><h2>Системы</h2>${SYSTEM_ORDER.map((slug) => `<a href="${products.get(slug).href}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>`);
   ultra = ultra.replace(/(<div class="pf-footer__column"><h2>Навигация<\/h2>)([\s\S]*?)(<\/div>)/, (whole, start, links, end) => `${start}${links.replace(/href="[^"]+">Документы<\/a>/, 'href="../documents.html?product=ultra">Документы</a>').replace(/href="[^"]+">Контакты<\/a>/, 'href="../contacts.html">Контакты</a>')}${end}`);
   ultra = ultra.replace('class="pf-ultra-detail"', 'class="pf-ultra-detail pf-product-detail" style="--pf-product-accent:#AC9354;--pf-product-accent-ink:#735A23"');
-  ultra = ultra.replace(/product-detail\.css\?v=\d+/, 'product-detail.css?v=23');
+  ultra = ultra.replace(/product-detail\.css\?v=\d+/, 'product-detail.css?v=24');
   ultra = ultra.replace(/site\.js\?v=\d+/, 'site.js?v=3');
   await writeFile(ultraPath, ultra, 'utf8');
 }
@@ -884,10 +892,9 @@ function utilityHeader(locale, currentPage) {
   const en = locale === 'en';
   const prefix = en ? '../' : '';
   const text = en
-    ? { home: 'PYROFLEX — home', products: 'Products', systems: 'Systems', services: 'Services', documents: 'Documents', partners: 'Partners', contacts: 'Contacts', catalog: 'Download catalogue', connect: 'Contact us', choose: 'Choose language', ru: 'RU Russian', english: 'EN English' }
-    : { home: 'ПИРОФЛЕКС — на главную', products: 'Продукты', systems: 'Системы', services: 'Сервисы', documents: 'Документы', partners: 'Партнерам', contacts: 'Контакты', catalog: 'Скачать каталог', connect: 'Связаться', choose: 'Выбрать язык', ru: 'RU Russian', english: 'EN English' };
-  const productLinks = PRODUCT_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
-  const systemLinks = SYSTEM_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
+    ? { home: 'PYROFLEX — home', products: 'Products', services: 'Services', documents: 'Documents', partners: 'Partners', contacts: 'Contacts', catalog: 'Catalogue', connect: 'Contact us', choose: 'Choose language', ru: 'RU Russian', english: 'EN English' }
+    : { home: 'ПИРОФЛЕКС — на главную', products: 'Продукты', services: 'Сервисы', documents: 'Документы', partners: 'Партнерам', contacts: 'Контакты', catalog: 'Каталог', connect: 'Связаться', choose: 'Выбрать язык', ru: 'RU Russian', english: 'EN English' };
+  const productLinks = PRODUCT_MENU_ORDER.map((slug) => `<a href="${prefix}products/${PAGE_FILES[slug]}">${escapeHtml(en ? EN_PRODUCT_NAMES[slug] : products.get(slug).nav)}</a>`).join('');
   const russianHref = en ? `${prefix}${currentPage}.html` : `${currentPage}.html`;
   const englishHref = en ? `${currentPage}.html` : `en/${currentPage}.html`;
   return `<header class="pf-header" id="top">
@@ -896,15 +903,13 @@ function utilityHeader(locale, currentPage) {
     <nav class="pf-nav" id="site-navigation" aria-label="${en ? 'Main navigation' : 'Основная навигация'}">
       <div class="pf-nav__links">
         <details class="pf-nav-group"><summary class="pf-nav__link">${text.products}</summary><div class="pf-nav__dropdown">${productLinks}</div></details>
-        <details class="pf-nav-group"><summary class="pf-nav__link">${text.systems}</summary><div class="pf-nav__dropdown">${systemLinks}</div></details>
         <a class="pf-nav__link" href="services.html"${currentPage === 'services' ? ' aria-current="page"' : ''}>${text.services}</a>
         <a class="pf-nav__link" href="documents.html"${currentPage === 'documents' ? ' aria-current="page"' : ''}>${text.documents}</a>
         <a class="pf-nav__link" href="partners.html"${currentPage === 'partners' ? ' aria-current="page"' : ''}>${text.partners}</a>
         <a class="pf-nav__link" href="contacts.html"${currentPage === 'contacts' ? ' aria-current="page"' : ''}>${text.contacts}</a>
-        <a class="pf-nav__link pf-nav__link--catalog" href="${prefix}${CATALOG_DOWNLOAD}" download="PYROFLEX-catalog.pdf">${text.catalog}</a>
       </div>
       <div class="pf-header__actions"><div class="pf-header__contacts"><a href="tel:88001018112">8 (800) 101-8-112</a><a href="mailto:Office@mk101.ru">Office@mk101.ru</a></div>
-        <a class="pf-button pf-button--small" href="contacts.html">${text.connect}</a>
+        <div class="pf-header__cta"><a class="pf-button pf-button--small pf-button--catalog" href="${prefix}${CATALOG_DOWNLOAD}" download="PYROFLEX-catalog.pdf">${text.catalog}</a><a class="pf-button pf-button--small" href="contacts.html">${text.connect}</a></div>
         <details class="pf-locale"><summary aria-label="${text.choose}"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5s1.1-6.2 3.3-8.5Z"/></svg> ${en ? 'EN' : 'RU'}</summary><div><a href="${russianHref}" lang="ru">${text.ru}</a><a href="${englishHref}" lang="en">${text.english}</a></div></details>
       </div>
     </nav>
