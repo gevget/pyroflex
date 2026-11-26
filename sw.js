@@ -4,7 +4,7 @@ const APP_ROOT = new URL('./', self.registration.scope);
 const ROUTES = [
   'index.html', 'contacts.html', 'documents.html', 'partners.html', 'services.html', 'image-catalog.html',
   'en/index.html', 'en/contacts.html', 'en/documents.html', 'en/partners.html', 'en/services.html',
-  'mk101/index.html', 'privacy/index.html',
+  'mk101/index.html', 'mk101/copy.html', 'privacy/index.html',
   'products/ultra.html', 'products/acrylic.html', 'products/base.html', 'products/finish.html', 'products/epoxy.html',
   'products/cable.html', 'products/therma-ultra.html', 'products/therma-epoxy.html',
   'products/system-t-ultra.html', 'products/system-t-epoxy.html',

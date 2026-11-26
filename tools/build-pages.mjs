@@ -7,7 +7,7 @@ const output = path.join(root, 'dist');
 const pages = [
   'index.html', 'contacts.html', 'documents.html', 'partners.html', 'services.html', 'image-catalog.html',
   'en/index.html', 'en/contacts.html', 'en/documents.html', 'en/partners.html', 'en/services.html',
-  'mk101/index.html', 'privacy/index.html',
+  'mk101/index.html', 'mk101/copy.html', 'privacy/index.html',
   ...['ultra', 'acrylic', 'base', 'finish', 'epoxy', 'cable', 'therma-ultra', 'therma-epoxy', 'system-t-ultra', 'system-t-epoxy']
     .map((slug) => `products/${slug}.html`),
 ];

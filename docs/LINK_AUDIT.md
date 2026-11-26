@@ -1,8 +1,8 @@
 # Проверка ссылок автономного сайта
 
-Создано автоматически: 2026-11-23T11:07:14.369Z. Проверяются активные страницы: index.html, en/index.html, contacts.html, documents.html, partners.html, services.html, mk101/index.html, en/contacts.html, en/documents.html, en/partners.html, en/services.html, privacy/index.html, products/ultra.html, products/acrylic.html, products/base.html, products/finish.html, products/epoxy.html, products/cable.html, products/therma-ultra.html, products/therma-epoxy.html, products/system-t-ultra.html, products/system-t-epoxy.html. Резервная страница reference.html в автономную сборку не входит.
+Создано автоматически: 2026-11-26T08:55:36.653Z. Проверяются активные страницы: index.html, en/index.html, contacts.html, documents.html, partners.html, services.html, mk101/index.html, mk101/copy.html, en/contacts.html, en/documents.html, en/partners.html, en/services.html, privacy/index.html, products/ultra.html, products/acrylic.html, products/base.html, products/finish.html, products/epoxy.html, products/cable.html, products/therma-ultra.html, products/therma-epoxy.html, products/system-t-ultra.html, products/system-t-epoxy.html. Резервная страница reference.html в автономную сборку не входит.
 
-Всего ссылок: **1348**; локальные переходы/якоря: **1232**; внешние URL: **2**; обнаружено ошибок структуры: **0**.
+Всего ссылок: **1402**; локальные переходы/якоря: **1278**; внешние URL: **2**; обнаружено ошибок структуры: **0**.
 
 Статусы внешних URL взяты из последнего запуска `node tools/check-external-links.mjs`; `mailto:` и `tel:` являются обработчиками устройства пользователя.
 
@@ -445,6 +445,60 @@
 | `mk101/index.html` | `#contacts` | Контакты | anchor | OK |
 | `mk101/index.html` | `#pyroflex` | ПИРОФЛЕКС | anchor | OK |
 | `mk101/index.html` | `../index.html` | Сайт ПИРОФЛЕКС | local | OK |
+| `mk101/copy.html` | `#main` | Перейти к содержанию | anchor | OK |
+| `mk101/copy.html` | `#top` | МК101 и ПИРОФЛЕКС — на главную | anchor | OK |
+| `mk101/copy.html` | `#about` | О компании | anchor | OK |
+| `mk101/copy.html` | `#services` | Услуги | anchor | OK |
+| `mk101/copy.html` | `#systems` | Системы | anchor | OK |
+| `mk101/copy.html` | `#cases` | Проекты | anchor | OK |
+| `mk101/copy.html` | `#documents` | Документы | anchor | OK |
+| `mk101/copy.html` | `#contacts` | Контакты | anchor | OK |
+| `mk101/copy.html` | `#pyroflex` | ПИРОФЛЕКС | anchor | OK |
+| `mk101/copy.html` | `tel:+79307090101` | 8 (930) 709-01-01 | tel | OK |
+| `mk101/copy.html` | `#about` | О компании | anchor | OK |
+| `mk101/copy.html` | `#services` | Услуги | anchor | OK |
+| `mk101/copy.html` | `#systems` | Системы | anchor | OK |
+| `mk101/copy.html` | `#cases` | Проекты | anchor | OK |
+| `mk101/copy.html` | `#documents` | Документы | anchor | OK |
+| `mk101/copy.html` | `#contacts` | Контакты | anchor | OK |
+| `mk101/copy.html` | `#pyroflex` | ПИРОФЛЕКС | anchor | OK |
+| `mk101/copy.html` | `tel:+79307090101` | 8 (930) 709-01-01 | tel | OK |
+| `mk101/copy.html` | `#services` | Наши услуги | anchor | OK |
+| `mk101/copy.html` | `#contacts` | Связаться с инженером | anchor | OK |
+| `mk101/copy.html` | `#about` | Прокрутить к разделу о компании | anchor | OK |
+| `mk101/copy.html` | `#services` | Посмотреть услуги ↗ | anchor | OK |
+| `mk101/copy.html` | `#expertise` | Проектная работа Проектирование и экспертиза Расчёты, документация, оценка рисков | anchor | OK |
+| `mk101/copy.html` | `#engineering` | Инженерные системы Проектирование и монтаж Сигнализация, пожаротушение, сети | anchor | OK |
+| `mk101/copy.html` | `#fire-protection` | Пассивная защита Огнезащита Конструкции, кабели, преграды | anchor | OK |
+| `mk101/copy.html` | `#testing` | Контроль качества Испытания и измерения Системы, покрытия, материалы | anchor | OK |
+| `mk101/copy.html` | `#support` | Работа с объектом Техническое сопровождение Подбор, документация, контроль | anchor | OK |
+| `mk101/copy.html` | `#extinguishing` | Системы пожаротушения ↗ | anchor | OK |
+| `mk101/copy.html` | [https://holding.oskgroup.ru/solutions/gasovoe-pozharotushenie/](https://holding.oskgroup.ru/solutions/gasovoe-pozharotushenie/) | Описание системы ↗ | external | needs HTTP check |
+| `mk101/copy.html` | [https://intra-fog.ru/](https://intra-fog.ru/) | Описание системы ↗ | external | needs HTTP check |
+| `mk101/copy.html` | `../documents.html` | каталоге документов продукции | local | OK |
+| `mk101/copy.html` | `#contacts` | Обсудить объект | anchor | OK |
+| `mk101/copy.html` | `tel:+79307090101` | 8 (930) 709-01-01 | tel | OK |
+| `mk101/copy.html` | `tel:+78001018112` | 8 (800) 101-8-112 | tel | OK |
+| `mk101/copy.html` | `mailto:office@pyroflex.ru` | office@pyroflex.ru | mailto | OK |
+| `mk101/copy.html` | `mailto:office@pyroflex.ru?subject=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%9C%D0%9A101` | Написать о проекте | mailto | OK |
+| `mk101/copy.html` | `../index.html#products` | Открыть сайт ПИРОФЛЕКС | local | OK |
+| `mk101/copy.html` | `../products/ultra.html` | PX-U ПИРОФЛЕКС Ультра Огнезащита металлоконструкций | local | OK |
+| `mk101/copy.html` | `../products/base.html` | PX-B ПИРОФЛЕКС База Эпоксидный грунт | local | OK |
+| `mk101/copy.html` | `../products/finish.html` | PX-F ПИРОФЛЕКС Финиш Финишное покрытие | local | OK |
+| `mk101/copy.html` | `../products/acrylic.html` | PX-A ПИРОФЛЕКС Акрил Огнезащита металлоконструкций | local | OK |
+| `mk101/copy.html` | `../products/epoxy.html` | PX-E ПИРОФЛЕКС Эпокси Эпоксидная огнезащита | local | OK |
+| `mk101/copy.html` | `../products/therma-ultra.html` | PX-T-U ПИРОФЛЕКС Терма Ультра Термозащитный слой | local | OK |
+| `mk101/copy.html` | `../products/therma-epoxy.html` | PX-T-E ПИРОФЛЕКС Терма Эпокси Термозащитный слой | local | OK |
+| `mk101/copy.html` | `../products/cable.html` | PX-C ПИРОФЛЕКС Кабель Защита кабельных линий | local | OK |
+| `mk101/copy.html` | `../products/system-t-ultra.html` | Полиуретановая основа Система-Т Ультра Огнезащитный состав и термозащитный слой ↗ | local | OK |
+| `mk101/copy.html` | `../products/system-t-epoxy.html` | Эпоксидная основа Система-Т Эпокси Огнезащитный состав и термозащитный слой ↗ | local | OK |
+| `mk101/copy.html` | `#top` | МК101 и ПИРОФЛЕКС — в начало страницы | anchor | OK |
+| `mk101/copy.html` | `#about` | О компании | anchor | OK |
+| `mk101/copy.html` | `#services` | Услуги | anchor | OK |
+| `mk101/copy.html` | `#systems` | Системы | anchor | OK |
+| `mk101/copy.html` | `#contacts` | Контакты | anchor | OK |
+| `mk101/copy.html` | `#pyroflex` | ПИРОФЛЕКС | anchor | OK |
+| `mk101/copy.html` | `../index.html` | Сайт ПИРОФЛЕКС | local | OK |
 | `en/contacts.html` | `#main` | Skip to content | anchor | OK |
 | `en/contacts.html` | `../index.html` | PYROFLEX — home | local | OK |
 | `en/contacts.html` | `../products/ultra.html` | PYROFLEX Ultra | local | OK |

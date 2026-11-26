@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const productPages = ['ultra', 'acrylic', 'base', 'finish', 'epoxy', 'cable', 'therma-ultra', 'therma-epoxy', 'system-t-ultra', 'system-t-epoxy'].map((slug) => `products/${slug}.html`);
-const pages = ['index.html', 'en/index.html', 'contacts.html', 'documents.html', 'partners.html', 'services.html', 'mk101/index.html', 'en/contacts.html', 'en/documents.html', 'en/partners.html', 'en/services.html', 'privacy/index.html', ...productPages];
+const pages = ['index.html', 'en/index.html', 'contacts.html', 'documents.html', 'partners.html', 'services.html', 'mk101/index.html', 'mk101/copy.html', 'en/contacts.html', 'en/documents.html', 'en/partners.html', 'en/services.html', 'privacy/index.html', ...productPages];
 const externalChecksFile = path.join(root, 'docs/external-checks.json');
 const externalChecks = fs.existsSync(externalChecksFile)
   ? new Map(JSON.parse(fs.readFileSync(externalChecksFile, 'utf8')).map((item) => [item.url, item]))
