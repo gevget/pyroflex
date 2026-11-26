@@ -259,6 +259,23 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--mk-red); outli
   .mk-footer__bottom { font-size: 9px; }
 }
 
+/* Copy page: show only the two source-defined service directions. */
+.mk-page--copy .mk-service-group__body .mk-service-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(26px, 4vw, 56px);
+  max-width: none;
+}
+.mk-page--copy .mk-service-group__body .mk-service-list > li { min-width: 0; }
+.mk-page--copy .mk-copy-hidden { display: none !important; }
+
+@media (max-width: 560px) {
+  .mk-page--copy .mk-service-group__body .mk-service-list {
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

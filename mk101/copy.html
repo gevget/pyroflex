@@ -13,7 +13,7 @@
   <link rel="preload" href="assets/fonts/Inter-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="assets/css/mk101.css">
 </head>
-<body class="mk-page">
+<body class="mk-page mk-page--copy">
   <a class="mk-skip-link" href="#main">Перейти к содержанию</a>
   <header class="mk-header" id="top">
     <div class="mk-container mk-header__inner">
@@ -24,8 +24,6 @@
         <a href="#about">О компании</a>
         <a href="#services">Услуги</a>
         <a href="#systems">Системы</a>
-        <a href="#cases">Проекты</a>
-        <a href="#documents">Документы</a>
         <a href="#contacts">Контакты</a>
         <a href="#pyroflex">ПИРОФЛЕКС</a>
       </nav>
@@ -36,9 +34,7 @@
           <a href="#about">О компании</a>
           <a href="#services">Услуги</a>
           <a href="#systems">Системы</a>
-          <a href="#cases">Проекты</a>
-          <a href="#documents">Документы</a>
-          <a href="#contacts">Контакты</a>
+              <a href="#contacts">Контакты</a>
           <a href="#pyroflex">ПИРОФЛЕКС</a>
           <a href="tel:+79307090101">8 (930) 709-01-01</a>
         </nav>
@@ -79,13 +75,7 @@
           <h2 id="about-title">МК101 — инженерный центр пожарной безопасности объектов.</h2>
         </div>
         <div class="mk-about__body">
-          <p>МК101 развивает комплексный подход к противопожарной защите объектов. В центре внимания — инженерная проработка задачи, нормативные требования и практическая применимость выбранных решений.</p>
-          <p>Направления охватывают проектирование и экспертизу, расчётно-аналитические работы, инженерные системы, огнезащиту, технический контроль и сопровождение. Состав работ и модель их выполнения определяются требованиями конкретного проекта.</p>
-          <ul class="mk-about__principles" aria-label="Принципы работы МК101">
-            <li><strong>Системный подход</strong><span>Учитываем связь инженерных и организационных требований.</span></li>
-            <li><strong>Инженерная проработка</strong><span>Сопоставляем исходные данные, нормы и технические решения.</span></li>
-            <li><strong>Решение под объект</strong><span>Состав работ зависит от его назначения и стадии.</span></li>
-          </ul>
+          <p>Наша компания предлагает системный подход в решении всего комплекса вопросов в области пожарной безопасности, гражданской обороны, защиты от ЧС и технической оснащенности охранных систем объектов защиты. Начиная от предпроектной консультации, разработки разделов ПД, специальных технических условий (стандартов организаций) до монтажных и пуско-наладочных работ систем и технических средств безопасности с обеспечением подтверждения соответствия продукции и услуг в аккредитованном органе по сертификации.</p>
           <a class="mk-link mk-link--light" href="#services">Посмотреть услуги <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -98,36 +88,32 @@
         <div class="mk-services__heading">
           <p class="mk-section-label">Инженерные услуги и компетенции</p>
           <h2 id="services-title">От требований проекта до технической защиты объекта.</h2>
-          <p>Пять направлений помогают найти нужный состав работ. Выберите категорию, чтобы раскрыть конкретные задачи.</p>
         </div>
-        <nav class="mk-service-overview" aria-label="Направления услуг МК101">
-          <a class="mk-service-overview__item" href="#expertise"><span>Проектная работа</span><strong>Проектирование и экспертиза</strong><small>Расчёты, документация, оценка рисков</small></a>
-          <a class="mk-service-overview__item" href="#engineering"><span>Инженерные системы</span><strong>Проектирование и монтаж</strong><small>Сигнализация, пожаротушение, сети</small></a>
-          <a class="mk-service-overview__item" href="#fire-protection"><span>Пассивная защита</span><strong>Огнезащита</strong><small>Конструкции, кабели, преграды</small></a>
-          <a class="mk-service-overview__item" href="#testing"><span>Контроль качества</span><strong>Испытания и измерения</strong><small>Системы, покрытия, материалы</small></a>
-          <a class="mk-service-overview__item" href="#support"><span>Работа с объектом</span><strong>Техническое сопровождение</strong><small>Подбор, документация, контроль</small></a>
-        </nav>
-        <p class="mk-services__disclaimer">Перечень описывает направления работы. Состав и модель выполнения согласуются отдельно для каждой задачи и объекта.</p>
 
-        <div class="mk-service-groups" aria-label="Подробный перечень услуг">
+        <div class="mk-service-groups" aria-label="Два направления деятельности МК101">
           <details class="mk-service-group mk-service-group--project" id="expertise" open>
             <summary class="mk-service-summary" aria-controls="expertise-list">
               <img class="mk-service-group__icon" src="public/icons/drafting-compass.svg" alt="" aria-hidden="true" width="36" height="36">
-              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Проектная работа</span><h3 id="project-title">Проектирование и экспертиза</h3><p>Подготовка проектных решений, расчётов и нормативных обоснований пожарной безопасности.</p></div>
+              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Направление 1</span><h3 id="project-title">Проектно-экспертная деятельность</h3></div>
               <span class="mk-service-group__toggle" aria-hidden="true"></span>
             </summary>
             <div class="mk-service-group__body" id="expertise-list">
               <ul class="mk-service-list">
-                <li><img class="mk-service-list__icon" src="public/icons/messages-square.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Предпроектные консультации</strong><span>Уточнение задач объекта, исходных данных и применимых требований пожарной безопасности.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/file-search.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Аудит проектной документации</strong><span>Анализ проектных материалов на соответствие техническому регламенту и применимым нормативам.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/file-text.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Разделы проектной документации по пожарной безопасности и ГО/ЧС</strong><span>Подготовка раздела мероприятий по обеспечению пожарной безопасности и материалов по гражданской обороне и чрезвычайным ситуациям в согласованном составе.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/file-cog.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Специальные технические условия</strong><span>Обоснование особых требований с учётом характеристик объекта и необходимых инженерно-технических и организационных мер.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/calculator.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Расчёт пожарного риска</strong><span>Расчётно-аналитическое обоснование по применимым методикам и исходным данным проекта.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/building-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Категорирование зданий, помещений и сооружений</strong><span>Определение категорий по взрывопожарной и пожарной опасности.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/scan-search.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Независимая оценка пожарного риска и обследование</strong><span>Анализ объекта и выполнения требований пожарной безопасности в рамках согласованной задачи.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/landmark.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Комплекс мероприятий и концепции пожарной безопасности</strong><span>Увязка инженерно-технических и организационных решений с особенностями объекта.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/book-open-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Стандарты организаций и нормативная документация</strong><span>Рассмотрение, подготовка изменений и актуализация документов в области пожарной безопасности.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/clipboard-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Декларации, планы тушения и анализ пожарных проездов</strong><span>Подготовка предусмотренной документации и оценка подъездов и доступа пожарных подразделений.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/messages-square.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Предпроектное консультирование</strong><span>Подготовка исходных требований (рекомендаций) по вопросам осуществляемой деятельности для проектирования объектов.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/file-search.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Оценка соответствия проектной документации</strong><span>Аудит на соответствие требованиям Технического регламента о требованиях пожарной безопасности, утверждённого Федеральным законом от 22.07.2008 № 123-ФЗ, и нормативных документов в области пожарной безопасности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/file-text.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Разделы проектной документации</strong><span>Разработка разделов «Мероприятия по обеспечению пожарной безопасности» / «ПМ ГО ЧС» для объектов любой сложности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/file-cog.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Специальные технические условия</strong><span>Разработка и согласование для объектов защиты всех видов с учётом специфики пожарной безопасности и комплекса необходимых инженерно-технических и организационных мероприятий.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/calculator.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Расчёты пожарного риска</strong><span>Проведение расчётов по установленным методикам и иных расчётно-аналитических обоснований пожарной безопасности для объектов различного назначения, включая особо опасные производственные объекты и энергоблоки АЭС.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/building-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Расчёт категорий зданий, помещений и сооружений</strong><span>Определение категорий по взрывопожарной и пожарной опасности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/scan-search.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Комплекс мероприятий по пожарной безопасности</strong><span>Разработка инженерно-технических и организационных мероприятий на основе расчётов пожарного риска, экспертиз, исследований и иных видов расчёта.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/clipboard-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Строительный контроль</strong><span>Контроль выполнения проектных решений и требований нормативно-правовых и нормативных документов в области пожарной безопасности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/landmark.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Независимая оценка пожарного риска</strong><span>Аудит пожарной безопасности, обследование и консультационная оценка выполнения условий соответствия объекта требованиям Технического регламента, утверждённого Федеральным законом от 22.07.2008 № 123-ФЗ.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/book-open-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Стандарты организаций (СТО)</strong><span>Разработка и согласование стандартов организаций по объектам и продукции, включая средства обеспечения пожарной безопасности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/briefcase-business.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Концепции пожарной безопасности</strong><span>Разработка концепций для территорий и подведомственных объектов корпораций, кластеров, инновационных центров, крупных компаний и других организаций.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/file-check-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Нормативные документы</strong><span>Рассмотрение, внесение изменений и дополнений, а при необходимости — полная разработка документов в области пожарной безопасности.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/package-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Декларации пожарной безопасности</strong><span>Разработка деклараций для вновь вводимых и эксплуатирующихся объектов по требованиям Технического регламента, утверждённого Федеральным законом от 22.07.2008 № 123-ФЗ.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/ruler.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Планы тушения пожара и анализ пожарных проездов</strong><span>Разработка плана тушения пожара и отчёта по анализу пожарных проездов, подъездов и обеспечения доступа подразделений пожарной охраны.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/microscope.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Научно-техническое консультирование</strong><span>Консультирование в области пожарной безопасности.</span></div></li>
               </ul>
             </div>
           </details>
@@ -135,68 +121,16 @@
           <details class="mk-service-group mk-service-group--engineering" id="engineering">
             <summary class="mk-service-summary" aria-controls="engineering-list">
               <img class="mk-service-group__icon" src="public/icons/construction.svg" alt="" aria-hidden="true" width="36" height="36">
-              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Инженерные системы</span><h3 id="engineering-title">Противопожарные и слаботочные системы</h3><p>Проектная проработка систем и сетей; поставка, монтаж, пусконаладка и обслуживание уточняются по задаче.</p></div>
+              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Направление 2</span><h3 id="engineering-title">Инженерно-техническая деятельность</h3></div>
               <span class="mk-service-group__toggle" aria-hidden="true"></span>
             </summary>
             <div class="mk-service-group__body" id="engineering-list">
               <ul class="mk-service-list">
-                <li><img class="mk-service-list__icon" src="public/icons/alarm-smoke.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Пожарная сигнализация и оповещение (АПС, СОУЭ)</strong><span>Автоматическая пожарная сигнализация и система оповещения и управления эвакуацией: проектирование и другие этапы в согласованном объёме.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/flame.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Автоматические установки пожаротушения (АУПТ)</strong><span>Подбор и проектная проработка автоматических систем с учётом назначения и параметров объекта.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/wind.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Противодымная защита</strong><span>Проектные решения и технические задачи, связанные с системами дымоудаления.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/faucet.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Внутренний противопожарный водопровод</strong><span>Инженерная проработка системы с учётом требований объекта и проектной документации.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/network.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Смежные слаботочные системы</strong><span>Системы контроля и управления доступом, видеонаблюдение, локальные вычислительные и структурированные кабельные сети.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/wrench.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Монтаж и пусконаладка</strong><span>Состав, технические решения и модель выполнения работ определяются проектом отдельно.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/toolbox.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Техническое обслуживание и ремонт</strong><span>Работы по противопожарным и смежным системам в рамках согласованной задачи и подтверждённых компетенций.</span></div></li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="mk-service-group mk-service-group--fire" id="fire-protection">
-            <summary class="mk-service-summary" aria-controls="fire-protection-list">
-              <img class="mk-service-group__icon" src="public/icons/shield-check.svg" alt="" aria-hidden="true" width="36" height="36">
-              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Пассивная противопожарная защита</span><h3 id="fire-protection-title">Огнезащита конструкций и материалов</h3><p>Решения для строительных конструкций, кабельной продукции и элементов противопожарных преград.</p></div>
-              <span class="mk-service-group__toggle" aria-hidden="true"></span>
-            </summary>
-            <div class="mk-service-group__body" id="fire-protection-list">
-              <ul class="mk-service-list">
-                <li><img class="mk-service-list__icon" src="public/icons/paintbrush-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Огнезащита строительных конструкций</strong><span>Подбор предусмотренной проектом системы обработки или конструктивной огнезащиты.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/cable.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Огнезащита кабельной продукции</strong><span>Решения для кабельных линий с учётом конструкции, условий размещения и требований проекта.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/package-check.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Огнезащита материалов</strong><span>Подбор материала и способа применения по документации конкретной системы.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/brick-wall-shield.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Заполнение противопожарных проходок</strong><span>Решения для мест прохода коммуникаций через противопожарные преграды.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/package-search.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Подбор огнезащитных материалов и систем</strong><span>Сопоставление вариантов с характеристиками конструкции, условиями эксплуатации и требованиями проекта.</span></div></li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="mk-service-group mk-service-group--testing" id="testing">
-            <summary class="mk-service-summary" aria-controls="testing-list">
-              <img class="mk-service-group__icon" src="public/icons/microscope.svg" alt="" aria-hidden="true" width="36" height="36">
-              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Исследования и измерительный контроль</span><h3 id="testing-title">Испытания и оценка качества</h3><p>Методы, объём проверки и возможность выдачи документов зависят от конкретной задачи и подтверждённых компетенций.</p></div>
-              <span class="mk-service-group__toggle" aria-hidden="true"></span>
-            </summary>
-            <div class="mk-service-group__body" id="testing-list">
-              <ul class="mk-service-list">
-                <li><img class="mk-service-list__icon" src="public/icons/activity.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Инструментальный контроль инженерных систем</strong><span>Проверки автоматической пожарной сигнализации, оповещения, пожаротушения и противодымной защиты по заданной программе.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/gauge.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Контроль противопожарного водоснабжения</strong><span>Проверка наружного и внутреннего противопожарного водопровода предусмотренными методами.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/scan-eye.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Оценка качества огнезащитной обработки</strong><span>Контроль строительных конструкций, кабельной продукции и материалов в пределах применимых методов.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/test-tubes.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Испытания продукции, конструкций и материалов</strong><span>Исследования изделий, веществ, инженерного оборудования и электротехнической продукции по согласованному заданию.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/alert-triangle.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Показатели огнестойкости и пожарной опасности</strong><span>Оценка пределов огнестойкости и классов конструктивной пожарной опасности по установленным методикам.</span></div></li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="mk-service-group mk-service-group--support" id="support">
-            <summary class="mk-service-summary" aria-controls="support-list">
-              <img class="mk-service-group__icon" src="public/icons/briefcase-business.svg" alt="" aria-hidden="true" width="36" height="36">
-              <div class="mk-service-summary__copy"><span class="mk-service-group__topic">Поддержка на этапах проекта</span><h3 id="support-title">Техническое сопровождение</h3><p>Подбор решений, работа с документацией и контроль проектных задач в согласованном объёме.</p></div>
-              <span class="mk-service-group__toggle" aria-hidden="true"></span>
-            </summary>
-            <div class="mk-service-group__body" id="support-list">
-              <ul class="mk-service-list">
-                <li><img class="mk-service-list__icon" src="public/icons/truck.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Подбор оборудования и комплектация</strong><span>Сопоставление технических требований и доступных решений; состав поставки согласуется отдельно.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/file-check-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Техническая документация</strong><span>Подготовка и ведение документов, необходимых для согласованного состава работ и систем.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/hard-hat.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Строительный контроль решений по пожарной безопасности</strong><span>Контроль исполнения проектных решений в пределах установленной задачи.</span></div></li>
-                <li><img class="mk-service-list__icon" src="public/icons/headset.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Технические консультации</strong><span>Разбор требований к системам, документации и дальнейшей эксплуатации объекта.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/alarm-smoke.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Системы пожарной безопасности</strong><span>Проектирование, монтаж, техническое обслуживание и ремонт автоматической пожарной сигнализации, систем оповещения и управления эвакуацией, автоматических систем пожаротушения, внутреннего противопожарного водопровода и дымоудаления.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/network.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Слаботочные системы и СКС</strong><span>Проектирование, монтаж и пусконаладка, включая видеонаблюдение, СКУД и локальную вычислительную сеть, с возможностью объединения в структурированные кабельные сети.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/paintbrush-2.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Огнезащита конструкций и коммуникаций</strong><span>Огнезащита строительных конструкций, кабельной продукции и материалов, заполнение проёмов противопожарных преград.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/truck.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Подбор средств обеспечения безопасности</strong><span>Мониторинг, анализ и подбор оптимальных, надёжных и высокотехнологичных решений для объектов защиты; взаимодействие с производителями и поставщиками, обеспечение своевременной поставки.</span></div></li>
+                <li><img class="mk-service-list__icon" src="public/icons/wrench.svg" alt="" aria-hidden="true" width="36" height="36"><div class="mk-service-list__copy"><strong>Техническое обслуживание систем и средств безопасности</strong><span>Обслуживание слаботочных систем, средств безопасности и противопожарной защиты, поддержание работоспособности системы пожарной безопасности, разработка и ведение установленной документации на объекте.</span></div></li>
               </ul>
             </div>
           </details>
@@ -249,7 +183,7 @@
       </div>
     </section>
 
-    <section class="mk-cases mk-section" id="cases" aria-labelledby="cases-title">
+    <section class="mk-cases mk-section mk-copy-hidden" id="cases" aria-labelledby="cases-title">
       <div class="mk-container">
         <div class="mk-cases__heading">
           <div>
@@ -314,7 +248,7 @@
       </div>
     </section>
 
-    <section class="mk-documents mk-section" id="documents" aria-labelledby="documents-title">
+    <section class="mk-documents mk-section mk-copy-hidden" id="documents" aria-labelledby="documents-title">
       <div class="mk-container">
         <div class="mk-documents__heading">
           <div>
@@ -359,7 +293,7 @@
       </div>
     </section>
 
-    <section class="mk-process mk-section" id="process" aria-labelledby="process-title">
+    <section class="mk-process mk-section mk-copy-hidden" id="process" aria-labelledby="process-title">
       <div class="mk-container">
         <div class="mk-process__heading">
           <div><p class="mk-section-label">Рабочий цикл</p><h2 id="process-title">От исходных данных к согласованному решению.</h2></div>
