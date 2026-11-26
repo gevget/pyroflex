@@ -366,6 +366,13 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--mk-red); outli
   .mk-page--copy .mk-extinguishing__partner-arrow { font-size: 17px; }
 }
 
+.mk-page--copy .mk-services.mk-section {
+  padding-bottom: calc(clamp(76px, 9vw, 132px) - 50px);
+}
+.mk-page--copy .mk-extinguishing.mk-section {
+  padding-top: calc(clamp(76px, 9vw, 132px) - 50px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
