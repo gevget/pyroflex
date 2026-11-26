@@ -281,6 +281,21 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--mk-red); outli
   filter: brightness(0) saturate(100%) invert(12%) sepia(98%) saturate(5730%) hue-rotate(339deg) brightness(92%) contrast(113%);
 }
 
+.mk-page--copy .mk-object-types__heading {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 0;
+}
+.mk-page--copy .mk-object-types__heading .mk-section-label {
+  grid-column: auto;
+  margin: 0 0 14px;
+}
+.mk-page--copy .mk-object-types__heading h2 { margin: 0; }
+.mk-page--copy .mk-object-types__heading > p {
+  max-width: 660px;
+  margin: 18px 0 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
