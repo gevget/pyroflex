@@ -114,7 +114,7 @@
     event.preventDefault();
     const values = new FormData(form);
     const isEnglish = document.documentElement.lang === 'en';
-    const subject = isEnglish ? `PYROFLEX website request — ${values.get('name')}` : `Запрос с сайта ПИРОФЛЕКС — ${values.get('name')}`;
+    const subject = isEnglish ? `PYROFLEX ® website request — ${values.get('name')}` : `Запрос с сайта ПИРОФЛЕКС ® — ${values.get('name')}`;
     const body = [
       `${isEnglish ? 'Name' : 'Имя'}: ${values.get('name')}`,
       `${isEnglish ? 'Phone' : 'Телефон'}: ${values.get('phone')}`,

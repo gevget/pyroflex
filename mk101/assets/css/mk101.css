@@ -276,6 +276,11 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--mk-red); outli
   }
 }
 
+.mk-page--copy .mk-service-group__icon,
+.mk-page--copy .mk-service-list__icon {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(98%) saturate(5730%) hue-rotate(339deg) brightness(92%) contrast(113%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
