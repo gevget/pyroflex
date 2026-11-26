@@ -344,12 +344,19 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--mk-red); outli
   aspect-ratio: 1;
   place-items: center;
   margin-bottom: 21px;
+  overflow: hidden;
   border: 1px solid rgba(255,255,255,.16);
   background: #171a1e;
   color: rgba(255,255,255,.4);
   text-align: center;
 }
 .mk-page--copy .mk-extinguishing__image-slot span { padding: 16px; font-size: 11px; letter-spacing: .04em; }
+.mk-page--copy .mk-extinguishing__image-slot > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .mk-page--copy .mk-extinguishing__item > img { grid-row: 2 / 6; }
 .mk-page--copy .mk-extinguishing__award {
   grid-column: 2;
