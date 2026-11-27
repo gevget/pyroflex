@@ -758,6 +758,31 @@ async function createIconVariants(page) {
   }));
 }
 
+function normalizeFooterLinks(html, { locale = 'ru', prefix = '' } = {}) {
+  const english = locale === 'en';
+  const navigationTitle = english ? 'Navigation' : 'Навигация';
+  const contactLabel = english ? 'Contacts' : 'Контакты';
+  const catalogLabel = english ? 'Catalogue' : 'Каталог';
+  const catalogFilename = english ? 'PYROFLEX-catalog.pdf' : 'ПИРОФЛЕКС-каталог.pdf';
+  const navigationPattern = new RegExp('(<div class="pf-footer__column"><h2>' + navigationTitle + '</h2>)([\\s\\S]*?)(</div>)');
+  return html.replace(navigationPattern, (whole, start, links, end) => {
+    const uniqueLinks = links
+      .replace(/<a\b[^>]*href="[^"]*mk101\/index\.html"[^>]*>MK101<\/a>/gi, '')
+      .replace(/<a\b[^>]*href="[^"]*pyroflex-catalog\.pdf"[^>]*>(?:Каталог|Catalogue)<\/a>/gi, '');
+    const mkLink = '<a href="' + prefix + 'mk101/index.html">MK101</a>';
+    const catalogLink = '<a href="' + prefix + 'assets/site/downloads/pyroflex-catalog.pdf" download="' + catalogFilename + '">' + catalogLabel + '</a>';
+    let inserted = false;
+    const normalizedLinks = uniqueLinks.replace(/<a\b([^>]*)>([^<]*)<\/a>/gi, (anchor, attributes, label) => {
+      if (!inserted && /contacts\.html/i.test(attributes) && label.trim() === contactLabel) {
+        inserted = true;
+        return anchor + mkLink + catalogLink;
+      }
+      return anchor;
+    });
+    return start + normalizedLinks + end;
+  });
+}
+
 async function updateSiteNavigation() {
   const indexPath = path.resolve(ROOT, 'index.html');
   let html = await readFile(indexPath, 'utf8');
@@ -773,7 +798,7 @@ async function updateSiteNavigation() {
   html = html.replace(/href="https:\/\/docs\.yandex\.ru\/docs\/view\?[^\"]+"/i, `href="${encodeURI('branding/пирофлекс каталог-сжатый (1).pdf')}"`);
   html = html.replace(/<div class="pf-footer__column"><h2>Продукты<\/h2>[\s\S]*?<\/div>/, `<div class="pf-footer__column"><h2>Продукты</h2>${PRODUCT_MENU_ORDER.map((slug) => `<a href="products/${PAGE_FILES[slug]}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>`);
   html = html.replace(/\s*<div class="pf-footer__column"><h2>Системы<\/h2>[\s\S]*?<\/div>/, '');
-  html = html.replace(/(<div class="pf-footer__column"><h2>Навигация<\/h2>[\s\S]*?<a href="contacts\.html">Контакты<\/a>)/, '$1<a href="mk101/index.html">MK101</a><a href="assets/site/downloads/pyroflex-catalog.pdf" download="ПИРОФЛЕКС-каталог.pdf">Каталог</a>');
+  html = normalizeFooterLinks(html);
   const cardRoutes = [
     ['product-ultra', 'ultra'], ['product-base', 'base'], ['product-finish', 'finish'], ['product-acrylic', 'acrylic'], ['product-epoxy', 'epoxy'],
     ['product-therma-ultra', 'therma-ultra'], ['product-therma-epoxy', 'therma-epoxy'], ['system-t-ultra', 'system-t-ultra'], ['system-t-epoxy', 'system-t-epoxy'], ['product-cable', 'cable']
@@ -818,7 +843,7 @@ async function updateSiteNavigation() {
   english = english.replace(/href="https:\/\/docs\.yandex\.ru\/docs\/view\?[^\"]+"/i, `href="../${encodeURI('branding/пирофлекс каталог-сжатый (1).pdf')}"`);
   english = english.replace(/<div class="pf-footer__column"><h2>Products<\/h2>[\s\S]*?<\/div>/, `<div class="pf-footer__column"><h2>Products</h2>${PRODUCT_MENU_ORDER.map((slug) => `<a href="../products/${PAGE_FILES[slug]}">${escapeHtml(EN_PRODUCT_NAMES[slug])}</a>`).join('')}</div>`);
   english = english.replace(/\s*<div class="pf-footer__column"><h2>Systems<\/h2>[\s\S]*?<\/div>/, '');
-  english = english.replace(/(<div class="pf-footer__column"><h2>Navigation<\/h2>[\s\S]*?<a href="contacts\.html">Contacts<\/a>)/, '$1<a href="../mk101/index.html">MK101</a><a href="../assets/site/downloads/pyroflex-catalog.pdf" download="PYROFLEX-catalog.pdf">Catalogue</a>');
+  english = normalizeFooterLinks(english, { locale: 'en', prefix: '../' });
   const documentRoutes = [
     ['system-t-ultra', 'СИСТЕМА-Т УЛЬТРА'], ['system-t-epoxy', 'СИСТЕМА-Т ЭПОКСИ'], ['therma-ultra', 'ТЕРМА УЛЬТРА'],
     ['therma-epoxy', 'ТЕРМА ЭПОКСИ'], ['ultra', 'ПИРОФЛЕКС-УЛЬТРА'], ['base', 'ПИРОФЛЕКС-БАЗА'],
@@ -852,7 +877,7 @@ async function updateSiteNavigation() {
   ultra = ultra.replace(/<div class="pf-footer__column"><h2>Продукты<\/h2>[\s\S]*?<\/div>/, `<div class="pf-footer__column"><h2>Продукты</h2>${PRODUCT_MENU_ORDER.map((slug) => `<a href="${slug === 'ultra' ? '#top' : products.get(slug).href}">${escapeHtml(products.get(slug).nav)}</a>`).join('')}</div>`);
   ultra = ultra.replace(/\s*<div class="pf-footer__column"><h2>Системы<\/h2>[\s\S]*?<\/div>/, '');
   ultra = ultra.replace(/(<div class="pf-footer__column"><h2>Навигация<\/h2>)([\s\S]*?)(<\/div>)/, (whole, start, links, end) => `${start}${links.replace(/href="[^"]+">Документы<\/a>/, 'href="../documents.html?product=ultra">Документы</a>').replace(/href="[^"]+">Контакты<\/a>/, 'href="../contacts.html">Контакты</a>')}${end}`);
-  ultra = ultra.replace(/(<div class="pf-footer__column"><h2>Навигация<\/h2>[\s\S]*?<a href="\.\.\/contacts\.html">Контакты<\/a>)/, '$1<a href="../mk101/index.html">MK101</a><a href="../assets/site/downloads/pyroflex-catalog.pdf" download="ПИРОФЛЕКС-каталог.pdf">Каталог</a>');
+  ultra = normalizeFooterLinks(ultra, { prefix: '../' });
   ultra = ultra.replace('class="pf-ultra-detail"', 'class="pf-ultra-detail pf-product-detail" style="--pf-product-accent:#AC9354;--pf-product-accent-ink:#735A23"');
   ultra = ultra.replace(/product-detail\.css\?v=\d+/, 'product-detail.css?v=25');
   ultra = ultra.replace(/(assets\/site\/site\.css)(?:\?v=\d+)?/g, '$1?v=4');
