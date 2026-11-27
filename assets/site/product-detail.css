@@ -277,10 +277,10 @@ body.pf-product-detail section[id] { scroll-margin-top: 36px; }
   .pf-detail-facts strong { font-size: 20px; }
   .pf-detail-facts span { font-size: 12px; }
   .pf-detail-application__grid, .pf-detail-specs__grid, .pf-detail-application-tech__grid { grid-template-columns: minmax(0, 1fr); gap: 30px; }
-  .pf-detail-application__visual { border-radius: 20px; }
-  .pf-detail-application__visual img { aspect-ratio: 1.25; }
-  .pf-detail-application__visual--system { border-radius: 20px; }
-  .pf-detail-application__visual--system img { height: 100%; aspect-ratio: 1; object-fit: cover; }
+  .pf-detail-application__visual { aspect-ratio: auto; border-radius: 20px; }
+  .pf-detail-application__visual img { height: auto; aspect-ratio: auto; object-fit: contain; }
+  .pf-detail-application__visual--system { aspect-ratio: auto; border-radius: 20px; }
+  .pf-detail-application__visual--system img { height: auto; aspect-ratio: auto; object-fit: contain; }
   .pf-detail-tags { gap: 7px; margin-block: 20px; }
   .pf-detail-tags li { padding: 7px 10px; font-size: 12px; }
   .pf-detail-benefits__list { grid-template-columns: minmax(0, 1fr); }

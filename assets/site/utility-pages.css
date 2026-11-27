@@ -175,6 +175,41 @@ a.pf-doc-tag:hover, a.pf-doc-tag:focus-visible { color: #151518; background: col
   .pf-doc-row__format { width: 38px; height: 38px; }
   .pf-doc-row__action { grid-column: 2; display: flex; align-items: center; justify-content: space-between; justify-items: stretch; }
 }
+
+@media (max-width: 800px) {
+  .pf-partners--page .pf-partners__visual img,
+  .pf-partner-story__visual img,
+  .pf-service-story__visual img,
+  .pf-partner-story--fabrication .pf-partner-story__visual img,
+  .pf-service-story--turnkey .pf-service-story__visual img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .pf-partners--page .pf-partners__visual img { border-radius: 16px; }
+  .pf-partner-story__visual,
+  .pf-service-story__visual { background: #e7e8eb; }
+  .pf-service-story--supply .pf-service-story__visual,
+  .pf-service-story--turnkey .pf-service-story__visual { background: #111317; }
+
+  .pf-partner-story--epc,
+  .pf-service-story--laboratory { min-height: 0; padding: 58px 0; }
+  .pf-partner-story--epc .pf-partner-story__inner,
+  .pf-service-story--laboratory .pf-service-story__inner { display: grid; min-height: 0; padding-block: 0; }
+  .pf-partner-story--epc .pf-partner-story__visual,
+  .pf-service-story--laboratory .pf-service-story__visual { position: relative; inset: auto; grid-row: 1; border-radius: 16px; }
+  .pf-partner-story--epc .pf-partner-story__visual img,
+  .pf-service-story--laboratory .pf-service-story__visual img { height: auto; min-height: 0; aspect-ratio: 3 / 2; object-fit: contain; }
+  .pf-partner-story--epc::before,
+  .pf-service-story--laboratory::before { display: none; }
+  .pf-partner-story--epc .pf-partner-story__copy,
+  .pf-service-story--laboratory .pf-service-story__copy { position: relative; z-index: 1; }
+}
 @media (prefers-reduced-motion: reduce) {
   .pf-doc-row { transition: none; }
 }
